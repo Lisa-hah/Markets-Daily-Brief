@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球宏观与资本市场每日简报</title>
+<style>
+:root {
+  --paper: #F7F8FA;
+  --band: #E9EEF4;
+  --ink: #0F172A;
+  --mute: #334155;
+  --hair-strong: #94A3B8;
+  --accent-text: #115E59;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans SC', sans-serif;
+}
+.card {
+  width: 100%;
+  max-width: 460px;
+  padding: 28px 26px;
+  background: var(--band);
+  border: 1px solid var(--hair-strong);
+  border-left: 3px solid var(--accent-text);
+}
+h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.35;
+}
+p {
+  margin: 0 0 18px;
+  font-size: 14px;
+  color: var(--mute);
+  line-height: 1.6;
+}
+a.btn {
+  display: inline-block;
+  padding: 9px 16px;
+  background: var(--accent-text);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+a.btn:hover { opacity: 0.92; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>全球宏观与资本市场每日简报</h1>
+    <p id="status">正在自动跳转至最新一期简报…</p>
+    <a class="btn" id="fallback-link" href="./2026-11-26.html">立即打开最新一期 &rarr;</a>
+  </div>
+<script>
+(function () {
+  const FALLBACK_FILE = "2026-11-26.html";
+  const statusEl = document.getElementById("status");
+  const linkEl = document.getElementById("fallback-link");
+
+  fetch("./issues.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    })
+    .then(function (data) {
+      let target = FALLBACK_FILE;
+      if (data && Array.isArray(data.issues) && data.issues.length > 0) {
+        const sorted = data.issues.slice().sort(function (a, b) {
+          return a.date.localeCompare(b.date);
+        });
+        target = sorted[sorted.length - 1].file;
+      } else if (data && data.latest) {
+        target = data.latest + ".html";
+      }
+      linkEl.href = "./" + target;
+      window.location.replace("./" + target);
+    })
+    .catch(function () {
+      statusEl.textContent = "自动跳转未完成，请点击下方按钮进入简报。";
+      linkEl.href = "./" + FALLBACK_FILE;
+    });
+})();
+</script>
+</body>
+</html>

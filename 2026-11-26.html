@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>全球宏观与资本市场每日简报｜2026-11-26</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Utilitarian · Finance & Global Macro Daily Briefing (2026-11-26) · Split answer-first hero · 9-module sequential order + continuous tracking · Space Grotesk + Noto Sans SC + JetBrains Mono · Cool Architectural Slate #F7F8FA + Deep Teal #115E59 + Emerald/Crimson accents · No images · One hero emphasis stat · 1 full-bleed closing band · 2 inline SVG charts (intraday V-reversal dumbbell + AI credit CDS bar) */
+:root {
+  --paper: #F7F8FA;
+  --band: #E9EEF4;
+  --ink: #0F172A;
+  --ink2: #1E293B;
+  --mute: #334155;
+  --hair: #D5DCE4;
+  --hair-strong: #94A3B8;
+  --accent: #0F766E;
+  --accent-text: #115E59;
+  --up: #047857;
+  --up-text: #065F46;
+  --down: #B91C1C;
+  --down-text: #991B1B;
+}
+
+* { box-sizing: border-box; }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Space Grotesk', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0;
+}
+
+.page {
+  width: 100%;
+  padding: 52px clamp(24px, 8vw, 112px) 84px;
+}
+
+a {
+  color: var(--accent-text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+a:hover { color: var(--accent); }
+
+/* Hero */
+.hero {
+  padding-bottom: 32px;
+  border-bottom: 2px solid var(--ink);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px 36px;
+  align-items: end;
+}
+.hero-main { grid-column: 1 / 9; }
+.hero-side {
+  grid-column: 9 / 13;
+  border-left: 2px solid var(--accent-text);
+  padding-left: 22px;
+}
+h1 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 3.8vw, 46px);
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  color: var(--ink);
+}
+.deck {
+  margin: 0 0 18px;
+  max-width: 68ch;
+  font-size: 16.5px;
+  line-height: 1.65;
+  color: var(--ink2);
+}
+.meta-line {
+  font-size: 13px;
+  color: var(--mute);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 22px;
+}
+.meta-line strong { color: var(--ink); font-weight: 600; }
+
+.hero-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(32px, 3.4vw, 44px);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--accent-text);
+  white-space: nowrap;
+}
+.hero-sub {
+  margin-top: 8px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--mute);
+}
+
+.logic-bar {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid var(--hair);
+  font-size: 18.5px;
+  font-weight: 600;
+  line-height: 1.52;
+  color: var(--ink);
+  max-width: 78ch;
+}
+
+/* Sections */
+section.sec { margin-top: 62px; }
+h2 {
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--ink);
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 700;
+  line-height: 1.28;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+h3 {
+  margin: 24px 0 8px;
+  font-size: 17.5px;
+  font-weight: 600;
+  line-height: 1.38;
+  color: var(--ink);
+}
+p {
+  margin: 0 0 13px;
+  font-size: 15.8px;
+  color: var(--ink2);
+}
+.measure { max-width: 70ch; }
+.meta-note {
+  font-size: 13.5px;
+  color: var(--mute);
+  margin: 4px 0 16px;
+  line-height: 1.55;
+}
+
+.prio {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+  vertical-align: 1px;
+}
+.p1 { color: var(--down-text); }
+.p2 { color: var(--accent-text); }
+.p3 { color: var(--mute); }
+
+.up { color: var(--up-text); font-weight: 600; white-space: nowrap; }
+.down { color: var(--down-text); font-weight: 600; white-space: nowrap; }
+.flat { color: var(--mute); font-weight: 500; white-space: nowrap; }
+.mono { font-family: 'JetBrains Mono', monospace; font-size: 13.5px; white-space: nowrap; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px 40px;
+}
+.item-rule {
+  padding-top: 16px;
+  border-top: 1px solid var(--hair);
+}
+.item-rule:first-child { padding-top: 0; border-top: none; }
+
+ol.exec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: exec;
+}
+ol.exec-list > li {
+  position: relative;
+  padding: 15px 0 15px 38px;
+  border-top: 1px solid var(--hair);
+  color: var(--ink2);
+}
+ol.exec-list > li:first-child { border-top: none; padding-top: 4px; }
+ol.exec-list > li::before {
+  counter-increment: exec;
+  content: counter(exec, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-text);
+}
+ol.exec-list > li:first-child::before { top: 5px; }
+
+ul.clean-list {
+  margin: 0 0 16px;
+  padding-left: 20px;
+}
+ul.clean-list li {
+  margin-bottom: 10px;
+  color: var(--ink2);
+  font-size: 15.5px;
+}
+ul.clean-list li strong { color: var(--ink); }
+
+/* Open Tables (max 3, no cards/boxes/zebra) */
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 18px 0 24px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.8px;
+  line-height: 1.5;
+}
+th {
+  font-family: 'JetBrains Mono', 'Noto Sans SC', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ink);
+  text-align: left;
+  padding: 10px 10px 10px 0;
+  border-bottom: 2px solid var(--ink);
+  white-space: nowrap;
+}
+td {
+  padding: 8.5px 10px 8.5px 0;
+  border-bottom: 1px solid var(--hair);
+  color: var(--ink2);
+  vertical-align: top;
+}
+td.num, th.num {
+  text-align: right;
+  font-family: 'JetBrains Mono', monospace;
+  white-space: nowrap;
+}
+tr.cat-row td {
+  padding: 16px 0 7px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--hair-strong);
+}
+
+/* Figures & Inline SVG */
+figure { margin: 26px 0 32px; padding: 0; }
+figure .fig-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 10px;
+  line-height: 1.35;
+}
+figcaption {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--mute);
+  line-height: 1.5;
+}
+
+blockquote.pull {
+  margin: 26px 0;
+  padding: 4px 0 4px 22px;
+  border-left: 3px solid var(--accent-text);
+  font-size: 19.5px;
+  font-weight: 500;
+  line-height: 1.55;
+  color: var(--ink);
+  max-width: 62ch;
+}
+
+.full-band {
+  margin: 62px calc(-1 * clamp(24px, 8vw, 112px)) 0;
+  padding: 46px clamp(24px, 8vw, 112px);
+  background: var(--band);
+  border-top: 1px solid var(--hair-strong);
+  border-bottom: 1px solid var(--hair-strong);
+}
+.full-band h2 { margin-top: 0; }
+
+.kw-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin: 8px 0 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent-text);
+}
+
+ol.sources {
+  padding-left: 22px;
+  font-size: 13.5px;
+  color: var(--mute);
+  columns: 2;
+  column-gap: 40px;
+}
+ol.sources li { margin-bottom: 7px; break-inside: avoid; }
+
+
+/* Date Switcher Bar */
+.date-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 16px;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--hair);
+}
+.date-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.date-nav-label {
+  font-family: 'JetBrains Mono', 'Noto Sans SC', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--mute);
+  letter-spacing: 0.03em;
+  margin-right: 4px;
+}
+.date-btn {
+  height: 32px;
+  padding: 0 11px;
+  border: 1px solid var(--hair-strong);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Space Grotesk', 'Noto Sans SC', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+}
+.date-btn:hover:not(:disabled) {
+  border-color: var(--accent-text);
+  color: var(--accent-text);
+  background: var(--band);
+}
+.date-btn:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+.date-select-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.date-select {
+  height: 32px;
+  padding: 0 28px 0 11px;
+  border: 1px solid var(--accent-text);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+.date-select-wrap::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  margin-top: -2px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--accent-text);
+  pointer-events: none;
+}
+.date-btn:focus-visible,
+.date-select:focus-visible {
+  outline: 2px solid var(--accent-text);
+  outline-offset: 2px;
+}
+.date-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.date-nav-hint {
+  font-size: 12px;
+  color: var(--mute);
+}
+
+/* Audio Broadcast Bar */
+.audio-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px 22px;
+  margin-bottom: 30px;
+  padding: 13px 18px;
+  background: var(--band);
+  border: 1px solid var(--hair-strong);
+  border-left: 3px solid var(--accent-text);
+}
+.audio-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--accent-text);
+  background: var(--accent-text);
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.audio-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.audio-btn:focus-visible,
+.audio-speed:focus-visible,
+.audio-mute:focus-visible,
+.audio-seek:focus-visible {
+  outline: 2px solid var(--accent-text);
+  outline-offset: 2px;
+}
+.audio-info {
+  flex: 0 1 auto;
+  min-width: 170px;
+}
+.audio-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.3;
+}
+.audio-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--accent-text);
+  border: 1px solid var(--accent-text);
+  padding: 1px 5px;
+  line-height: 1.25;
+}
+.audio-status {
+  margin-top: 2px;
+  font-size: 12px;
+  color: var(--mute);
+  line-height: 1.35;
+}
+.audio-status.warn {
+  color: var(--down-text);
+  font-weight: 500;
+}
+.audio-track {
+  flex: 1 1 240px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 180px;
+}
+.audio-seek {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: 1 1 auto;
+  height: 4px;
+  background: var(--hair-strong);
+  cursor: pointer;
+  margin: 0;
+}
+.audio-seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-text);
+  border: none;
+  cursor: pointer;
+}
+.audio-seek::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--accent-text);
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+.audio-seek:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.audio-time {
+  flex: 0 0 auto;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  color: var(--ink2);
+  white-space: nowrap;
+}
+.audio-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.audio-speed,
+.audio-mute {
+  height: 30px;
+  padding: 0 9px;
+  border: 1px solid var(--hair-strong);
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.audio-speed:hover,
+.audio-mute:hover {
+  border-color: var(--accent-text);
+  color: var(--accent-text);
+}
+
+@media (max-width: 900px) {
+  .date-nav { flex-direction: column; align-items: flex-start; }
+  .date-nav-right { width: 100%; justify-content: space-between; }
+  .audio-bar { flex-wrap: wrap; gap: 12px 14px; }
+  .audio-track { order: 3; flex: 1 1 100%; }
+
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-main, .hero-side { grid-column: 1 / -1; }
+  .hero-side { border-left: none; border-top: 2px solid var(--accent-text); padding-left: 0; padding-top: 14px; }
+  .grid-2 { grid-template-columns: 1fr; }
+  ol.sources { columns: 1; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- 日期切换栏（自动读取仓库根目录 ./issues.json，无需手动维护） -->
+<nav class="date-nav" id="date-nav" aria-label="简报日期切换">
+  <div class="date-nav-left">
+    <span class="date-nav-label">ISSUE</span>
+    <button type="button" class="date-btn" id="date-prev-btn" aria-label="查看上一期简报">
+      <span aria-hidden="true">&larr;</span>
+      <span>上一期</span>
+    </button>
+    <div class="date-select-wrap">
+      <select class="date-select" id="date-select" aria-label="选择简报日期"></select>
+    </div>
+    <button type="button" class="date-btn" id="date-next-btn" aria-label="查看下一期简报">
+      <span>下一期</span>
+      <span aria-hidden="true">&rarr;</span>
+    </button>
+  </div>
+  <div class="date-nav-right">
+    <span class="date-nav-hint" id="date-nav-hint">同步期数中...</span>
+  </div>
+</nav>
+
+<!-- 语音播报栏（自动匹配 ./audio/{当前日期}.mp3，也可在底部脚本 CUSTOM_AUDIO_URL 手动覆盖） -->
+<div class="audio-bar" id="audio-bar" role="region" aria-label="每日简报语音播报">
+  <audio id="briefing-audio" preload="metadata" src=""></audio>
+  <button type="button" class="audio-btn" id="audio-play-btn" aria-label="播放语音播报" title="播放 / 暂停">
+    <svg id="audio-icon-play" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+      <polygon points="3,2 14,8 3,14"></polygon>
+    </svg>
+    <svg id="audio-icon-pause" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="display:none;">
+      <rect x="3" y="2" width="3.5" height="12"></rect>
+      <rect x="9.5" y="2" width="3.5" height="12"></rect>
+    </svg>
+  </button>
+
+  <div class="audio-info">
+    <div class="audio-title">
+      <span class="audio-tag">AUDIO</span>
+      <span>每日简报语音播报</span>
+    </div>
+    <div class="audio-status" id="audio-status">自动匹配当日音频中...</div>
+  </div>
+
+  <div class="audio-track">
+    <input type="range" class="audio-seek" id="audio-seek" min="0" max="100" value="0" step="0.1" aria-label="播放进度" disabled>
+    <span class="audio-time" id="audio-time">00:00 / --:--</span>
+  </div>
+
+  <div class="audio-actions">
+    <button type="button" class="audio-speed" id="audio-speed" aria-label="切换倍速" title="切换播放倍速">1.0x</button>
+    <button type="button" class="audio-mute" id="audio-mute" aria-label="静音切换" title="静音 / 取消静音">
+      <svg id="audio-icon-vol" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M2 6v4h3l4 3V3L5 6H2zm9.5 2a2.5 2.5 0 0 0-1.5-2.3v4.6A2.5 2.5 0 0 0 11.5 8z"></path>
+      </svg>
+      <svg id="audio-icon-muted" width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="display:none;">
+        <path d="M2 6v4h3l4 3V3L5 6H2zm9.2 2 2.1-2.1-.9-.9-2.1 2.1L8.2 5l-.9.9L9.4 8l-2.1 2.1.9.9 2.1-2.1 2.1 2.1.9-.9L11.2 8z"></path>
+      </svg>
+    </button>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="hero-grid">
+    <div class="hero-main">
+      <h1>全球宏观与资本市场每日简报｜2026-11-26</h1>
+      <p class="deck">感恩节休市前夜，美股在美国 10 月核心 PCE 创三年新高（3.3%）、USTR 正式抛出 14 国 15%–35% 301 关税及标普将英伟达列入负面信用观察的三重冲击下，上演史诗级盘中深 V 反转；而避险买盘压低美债收益率 7–10bp、AI 基建 CDS 飙至纪录高位、胡塞袭击沙特炼油厂推升布油至 94.66 美元，今日亚太股市早盘借势普涨修复。</p>
+      <div class="meta-line">
+        <span><strong>生成与数据截止：</strong>北京时间 2026年11月26日 09:36（UTC+8）</span>
+        <span><strong>覆盖区间：</strong>2026-11-25 09:36 — 2026-11-26 09:36</span>
+        <span><strong>休市提示：</strong>11月26日美国感恩节，美股与美债全天休市（表内美市为 11/25 收盘）</span>
+        <span><strong>连续追踪：</strong>已对比 11-25（1日）与 11-24（2日）历史简报；7日及30日暂无存档</span>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="hero-num">3.3% / -7bp</div>
+      <div class="hero-sub">美国 10 月核心 PCE 同比创三年新高（3.3%）锁死 12 月加息，但 10 年期美债收益率却逆势大跌 7bp 至 4.86%——避险与信用担忧正压倒单纯通胀交易（<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026" target="_blank" rel="noopener noreferrer">BEA</a>）。</div>
+    </div>
+  </div>
+  <div class="logic-bar">主导交易逻辑：核心通胀粘性（12月加息定价97.8%）与14国关税冲击正同台上演，但市场定价重心已从“恐慌式抛售芯片”切换为“信用利差排雷（远离高杠杆AI债）+ 逢低回补高现金流/防御资产与超跌亚太龙头”。</div>
+</header>
+
+<!-- 01｜核心摘要 -->
+<section class="sec">
+  <h2>01｜核心摘要 Executive Summary</h2>
+  <ol class="exec-list">
+    <li>
+      <span class="prio p1">P1</span><strong>美国 10 月核心 PCE 升至 3.3% 创三年新高、Q3 GDP 上修至 4.3%，12 月加息 25bp 概率冲上 97.8%，但实际消费停滞。</strong>
+      BEA 公布 10 月核心 PCE 同比 3.3%（预期 3.2%），整体 PCE 3.8%（符合预期），Q3 实际 GDP 二读由 3.4% 大幅上修至 4.3%，初请失业金降至 18.9 万人，但 10 月实际个人消费支出环比 0.0%（<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026" target="_blank" rel="noopener noreferrer">BEA</a>，<a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank" rel="noopener noreferrer">Charles Schwab</a>）。强增长与粘性通胀彻底锁死 12 月加息，但消费零增长点燃“滞胀”隐忧，令美债 2Y/10Y 收益率反跌 10bp/7bp。
+    </li>
+    <li>
+      <span class="prio p1">P1</span><strong>美国 USTR 正式公布 14 国 301 工业产能过剩关税提案（15%–35%），未推迟。</strong>
+      税率覆盖越南最高 35%、印度 25%、中国叠加 20%、欧盟最高 20%、日韩 15%（<a href="https://www.stocktitan.net/articles/new-tariffs-14-economies-section-301-2026" target="_blank" rel="noopener noreferrer">Stock Titan</a>，<a href="https://ustr.gov/sites/default/files/files/Press/Releases/2026/SECP%20301%20China%20report.pdf" target="_blank" rel="noopener noreferrer">USTR 官方报告</a>）。范围与叠加幅度超出市场温和预期，直接抬升美国中期商品再通胀预期，并冲击亚洲出口链。
+    </li>
+    <li>
+      <span class="prio p1">P1</span><strong>AI 信用警报全面官方化：标普将英伟达“AA”评级列入负面观察，CoreWeave 与 Oracle CDS 创纪录，美联储预警 6,800 亿 AI 债风险。</strong>
+      标普因治理与关键人物风险将英伟达列入负面观察；CoreWeave 5 年期 CDS 飙至 1,314bp、Oracle 创纪录达 360bp、软银走阔至 501bp；美联储《金融稳定报告》点名 AI 基建发债已超 6,800 亿美元（<a href="https://www.benzinga.com/markets/tech/26/11/63657437/cds-dont-lie-chamath-warns-as-credit-markets-sound-the-alarm" target="_blank" rel="noopener noreferrer">Benzinga</a>，<a href="https://cryptobriefing.com/fed-warns-of-680b-ai-infrastructure-debt-risk-to-financial-stability/" target="_blank" rel="noopener noreferrer">CryptoBriefing</a>）。信用市场正在对高杠杆算力商进行残酷出清。
+    </li>
+    <li>
+      <span class="prio p1">P1</span><strong>感恩节前美股上演史诗级深 V 反转，迈克尔·伯里宣布清仓纳指 100 看跌期权临时转多。</strong>
+      11 月 25 日纳指盘中一度暴跌 4.6%（纳指 100 触及 -20% 熊市线）、费城半导体跌近 8%，但午后大幅拉升，收盘道指翻红涨 0.33%、标普仅跌 0.25%（370 涨 128 跌）、罗素 2000 涨 0.71%、中概金龙指数涨 1.87%（<a href="https://cappnotes.substack.com/p/closing-look-wednesday-november-25" target="_blank" rel="noopener noreferrer">CappNotes</a>）。大空头伯里同日披露已平掉全部纳指 Put、重仓京东及港股龙头，大幅缓和了科技股单边踩踏动能（<a href="https://mlq.ai/news/michael-burry-sells-his-last-nasdaq-100-puts-and-says-his-portfolio-is-now-mostly-long/" target="_blank" rel="noopener noreferrer">MLQ.ai</a>）。
+    </li>
+    <li>
+      <span class="prio p1">P1</span><strong>韩国央行今早加息 25bp 至 3.25%，同时准备扩容稳市基金；亚太股市早盘全线反弹。</strong>
+      韩国央行实现 7 月以来年内第三次加息，并将 2026/2027 年 GDP 预测大幅上调至 3.9%/4.1%（<a href="https://www.koreaherald.com/article/10949940" target="_blank" rel="noopener noreferrer">The Korea Herald</a>）。在昨日 KOSPI 暴跌 6.16%、A 股沪指失守 3,500 点后，今日早盘日经 225（+1.86%）、KOSPI（+1.81%）、恒生科技（+2.29%）与 A 股同步反弹。
+    </li>
+    <li>
+      <span class="prio p1">P1</span><strong>中东能源突发袭击推升布伦特原油大涨 3.57% 至 94.66 美元；黄金击穿 3,500 美元后深 V 修复。</strong>
+      也门胡塞武装声称袭击沙特最大炼油厂拉斯塔努拉，叠加霍尔木兹海峡液化气船触雷报道，油价飙升加剧再通胀压力；现货黄金盘中急跌至 3,426 美元创逾一年新低后回升至 3,564 美元附近（<a href="https://www.marketindex.com.au/news/morning-wrap-asx-200-to-rise-s-and-p-500-and-nasdaq-pare-ai-rout-trump" target="_blank" rel="noopener noreferrer">Market Index</a>，<a href="https://www.kitco.com/news/article/2026-11-25/gold-silver-reverse-early-losses-wall-street-rebounds-ahead-thanksgiving" target="_blank" rel="noopener noreferrer">Kitco</a>）。
+    </li>
+    <li>
+      <span class="prio p2">P2</span><strong>中国 A 股宽基 ETF 尾盘放量护盘逾 230 亿，南向资金续扫 64 亿港元，理想 Q3 毛利率大幅改善。</strong>
+      11 月 25 日沪指跌 2.03% 报 3,476.47 点、宁德时代市值跌破万亿，但尾盘 20 分钟沪深 300 与上证 50 ETF 放量逾 230 亿元托底；港股跌破 22,000 点获南向资金净买入 64.34 亿港元，今日早盘恒指快速收复 22,200 点（<a href="https://www.cls.cn/detail/2544794" target="_blank" rel="noopener noreferrer">财联社</a>，<a href="https://www.cls.cn/detail/2544539" target="_blank" rel="noopener noreferrer">财联社港股</a>）。
+    </li>
+  </ol>
+</section>
+
+<!-- 02｜全球主要资本市场表现 -->
+<section class="sec">
+  <h2>02｜全球主要资本市场表现 Market Dashboard</h2>
+  <p class="meta-note">交易状态说明：今日（11 月 26 日，周四）为美国感恩节，美股与美债全天休市，表内美国市场数据均为 11 月 25 日（周三）最近收盘行情，绝非 26 日当日行情；A 股、港股、日韩股市为北京时间 11 月 26 日 09:30–09:37 早盘交易中行情；欧股与印度股市为 11 月 25 日最近收盘。</p>
+
+  <figure>
+    <div class="fig-title">感恩节前美股与贵金属上演极端深 V 反转：纳指与芯片盘中崩跌后尾盘收复逾九成失地</div>
+    <svg viewBox="0 0 700 350" width="100%" role="img" aria-label="11月25日核心资产盘中最低跌幅与最终收盘涨跌幅对比图">
+      <!-- X scale: -9% to +2% => range 11%, x=180 to 630 (width 450px, 1% = 40.9px). Zero line at x = 180 + 9*40.9 = 548 -->
+      <line x1="221" y1="26" x2="221" y2="306" stroke="#D5DCE4" stroke-width="1"/>
+      <line x1="303" y1="26" x2="303" y2="306" stroke="#D5DCE4" stroke-width="1"/>
+      <line x1="384" y1="26" x2="384" y2="306" stroke="#D5DCE4" stroke-width="1"/>
+      <line x1="466" y1="26" x2="466" y2="306" stroke="#D5DCE4" stroke-width="1"/>
+      <line x1="548" y1="18" x2="548" y2="310" stroke="#0F172A" stroke-width="1.5"/>
+      <line x1="630" y1="26" x2="630" y2="306" stroke="#D5DCE4" stroke-width="1"/>
+
+      <!-- Legend -->
+      <circle cx="200" cy="14" r="5" fill="#991B1B"/>
+      <text x="212" y="18" font-size="13" fill="#334155">11/25 盘中最大跌幅</text>
+      <circle cx="380" cy="14" r="5" fill="#0F766E"/>
+      <text x="392" y="18" font-size="13" fill="#334155">11/25 最终收盘涨跌幅</text>
+
+      <!-- X ticks -->
+      <text x="221" y="330" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">-8%</text>
+      <text x="303" y="330" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">-6%</text>
+      <text x="384" y="330" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">-4%</text>
+      <text x="466" y="330" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">-2%</text>
+      <text x="548" y="330" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#0F172A">0%</text>
+      <text x="630" y="330" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">+2%</text>
+
+      <!-- Row 1: 费城半导体 SOX: low -7.96% (x=222), close -0.65% (x=521) -->
+      <text x="166" y="64" text-anchor="end" font-size="14" fill="#0F172A">费城半导体 (SOX)</text>
+      <line x1="222" y1="59" x2="521" y2="59" stroke="#0F766E" stroke-width="4"/>
+      <circle cx="222" cy="59" r="6" fill="#991B1B"/>
+      <circle cx="521" cy="59" r="6" fill="#0F766E"/>
+      <text x="222" y="45" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#991B1B">-7.96%</text>
+      <text x="521" y="45" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#115E59">-0.65%</text>
+
+      <!-- Row 2: 纳斯达克综合: low -4.60% (x=360), close -0.62% (x=523) -->
+      <text x="166" y="122" text-anchor="end" font-size="14" fill="#0F172A">纳斯达克综合</text>
+      <line x1="360" y1="117" x2="523" y2="117" stroke="#0F766E" stroke-width="4"/>
+      <circle cx="360" cy="117" r="6" fill="#991B1B"/>
+      <circle cx="523" cy="117" r="6" fill="#0F766E"/>
+      <text x="360" y="103" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#991B1B">-4.60%</text>
+      <text x="523" y="103" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#115E59">-0.62%</text>
+
+      <!-- Row 3: 标普500: low -3.20% (x=417), close -0.25% (x=538) -->
+      <text x="166" y="180" text-anchor="end" font-size="14" fill="#0F172A">标普 500</text>
+      <line x1="417" y1="175" x2="538" y2="175" stroke="#0F766E" stroke-width="4"/>
+      <circle cx="417" cy="175" r="6" fill="#991B1B"/>
+      <circle cx="538" cy="175" r="6" fill="#0F766E"/>
+      <text x="417" y="161" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#991B1B">-3.20%</text>
+      <text x="538" y="161" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#115E59">-0.25%</text>
+
+      <!-- Row 4: 道琼斯工业: low -2.20% (x=458), close +0.33% (x=561) -->
+      <text x="166" y="238" text-anchor="end" font-size="14" fill="#0F172A">道琼斯工业</text>
+      <line x1="458" y1="233" x2="561" y2="233" stroke="#047857" stroke-width="4"/>
+      <circle cx="458" cy="233" r="6" fill="#991B1B"/>
+      <circle cx="561" cy="233" r="6" fill="#065F46"/>
+      <text x="458" y="219" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#991B1B">-2.20%</text>
+      <text x="580" y="219" text-anchor="start" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#065F46">+0.33%</text>
+
+      <!-- Row 5: 戴尔科技 (DELL): low -7.50% (x=241), close +0.60% (x=573) -->
+      <text x="166" y="296" text-anchor="end" font-size="14" fill="#0F172A">戴尔科技 (DELL)</text>
+      <line x1="241" y1="291" x2="573" y2="291" stroke="#047857" stroke-width="4"/>
+      <circle cx="241" cy="291" r="6" fill="#991B1B"/>
+      <circle cx="573" cy="291" r="6" fill="#065F46"/>
+      <text x="241" y="277" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#991B1B">-7.50%</text>
+      <text x="586" y="295" text-anchor="start" font-family="JetBrains Mono, monospace" font-size="13" font-weight="600" fill="#065F46">+0.60%</text>
+    </svg>
+    <figcaption>单位：百分比（%）；道指盘中一度跌逾 1,100 点（约 -2.20%），尾盘翻红收涨 0.33%。数据来源：Google Finance、CappNotes、Stock Titan（2026-11-25 美股收盘）。</figcaption>
+  </figure>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>资产名称</th>
+          <th class="num">最新价格 / 收益率</th>
+          <th class="num">单日 / 日内变动</th>
+          <th class="num">近5日变动</th>
+          <th class="num">年初至今 (YTD)</th>
+          <th>时间与交易状态</th>
+          <th>来源</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="cat-row"><td colspan="7">一、全球主要股票市场</td></tr>
+        <tr><td>标普 500 (SPX)</td><td class="num">7,182.78</td><td class="num down">-0.25%</td><td class="num up">+0.10%</td><td class="num up">+4.16%</td><td>11/25 收盘（26日感恩节休市）</td><td><a href="https://www.kvue.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-wednesday-11252026/616-d1793541-428a-4817-8311-f566330b9a76" target="_blank" rel="noopener noreferrer">AP News / GF</a></td></tr>
+        <tr><td>纳斯达克综合 (IXIC)</td><td class="num">23,585.80</td><td class="num down">-0.62%</td><td class="num down">-3.46%</td><td class="num up">+0.71%</td><td>11/25 收盘（26日感恩节休市）</td><td><a href="https://finance.eastmoney.com/a/202611263939976173.html" target="_blank" rel="noopener noreferrer">东方财富 / GF</a></td></tr>
+        <tr><td>道琼斯工业 (DJI)</td><td class="num">50,182.95</td><td class="num up">+0.33%</td><td class="num flat">-0.03%</td><td class="num up">+3.75%</td><td>11/25 收盘（26日感恩节休市）</td><td><a href="https://www.kvue.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-wednesday-11252026/616-d1793541-428a-4817-8311-f566330b9a76" target="_blank" rel="noopener noreferrer">AP News / GF</a></td></tr>
+        <tr><td>罗素 2000 (RUT)</td><td class="num">2,704.06</td><td class="num up">+0.71%</td><td class="num up">+1.84%</td><td class="num up">+8.14%</td><td>11/25 收盘（26日感恩节休市）</td><td><a href="https://cappnotes.substack.com/p/closing-look-wednesday-november-25" target="_blank" rel="noopener noreferrer">CappNotes / GF</a></td></tr>
+        <tr><td>费城半导体 (SOX)</td><td class="num">8,774.86</td><td class="num down">-0.65%</td><td class="num down">-6.81%</td><td class="num flat">暂无可靠数据</td><td>11/25 收盘（26日感恩节休市）</td><td>Google Finance</td></tr>
+        <tr><td>上证指数 (000001)</td><td class="num">3,479.18</td><td class="num up">+0.08%</td><td class="num down">-3.03%</td><td class="num down">-12.26%</td><td>11/26 09:35 盘中（25日-2.03%）</td><td><a href="https://www.nbd.com.cn/articles/2026-11-26/4659331.html" target="_blank" rel="noopener noreferrer">每经 / GF</a></td></tr>
+        <tr><td>深证成指 (399001)</td><td class="num">10,120.03</td><td class="num up">+0.33%</td><td class="num down">-5.06%</td><td class="num down">-25.61%</td><td>11/26 09:37 盘中（25日-3.24%）</td><td><a href="https://www.nbd.com.cn/articles/2026-11-26/4659331.html" target="_blank" rel="noopener noreferrer">每经 / GF</a></td></tr>
+        <tr><td>沪深 300 (000300)</td><td class="num">3,904.58</td><td class="num up">+0.16%</td><td class="num down">-0.54%</td><td class="num flat">暂无可靠数据</td><td>11/26 09:36 盘中（25日-1.65%）</td><td>Google Finance</td></tr>
+        <tr><td>创业板指 (399006)</td><td class="num">2,194.16</td><td class="num up">+0.48%</td><td class="num down">-5.08%</td><td class="num down">-32.34%</td><td>11/26 09:37 盘中（25日-4.19%）</td><td><a href="https://www.nbd.com.cn/articles/2026-11-26/4659331.html" target="_blank" rel="noopener noreferrer">每经 / GF</a></td></tr>
+        <tr><td>科创 50 (000688)</td><td class="num">1,201.06</td><td class="num up">+1.26%</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/26 09:30 开盘（25日-5.12%）</td><td><a href="https://finance.eastmoney.com/a/202611253939509467.html" target="_blank" rel="noopener noreferrer">东方财富</a></td></tr>
+        <tr><td>恒生指数 (HSI)</td><td class="num">22,286.01</td><td class="num up">+1.46%</td><td class="num down">-4.33%</td><td class="num down">-13.80%</td><td>11/26 09:36 盘中（25日-1.14%）</td><td><a href="https://www.dahecube.com/spiderdetail.html?spidid=899277?recid=1" target="_blank" rel="noopener noreferrer">大河财立方 / GF</a></td></tr>
+        <tr><td>恒生科技指数</td><td class="num">3,455.60</td><td class="num up">+2.29%</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/26 09:30 开盘（25日-2.56%）</td><td><a href="https://cn.investing.com/indices/hang-seng-tech-historical-data" target="_blank" rel="noopener noreferrer">Investing.com</a></td></tr>
+        <tr><td>欧洲 STOXX 600</td><td class="num">626.03</td><td class="num down">-1.06%</td><td class="num down">-1.94%</td><td class="num up">+5.61%</td><td>11/25 欧股最近收盘</td><td><a href="https://mlq.ai/news/european-stocks-close-down-1-as-chipmakers-slide-with-a-4-nasdaq-drop-carmakers-hold-gains-on-eu-hybrid-caps/" target="_blank" rel="noopener noreferrer">MLQ.ai / GF</a></td></tr>
+        <tr><td>德国 DAX</td><td class="num">24,702.13</td><td class="num down">-1.26%</td><td class="num down">-2.99%</td><td class="num up">+0.86%</td><td>11/25 欧股最近收盘</td><td>Google Finance</td></tr>
+        <tr><td>英国富时 100</td><td class="num">10,426.94</td><td class="num down">-0.38%</td><td class="num down">-1.18%</td><td class="num up">+4.89%</td><td>11/25 欧股最近收盘</td><td><a href="https://tradingeconomics.com/united-kingdom/stock-market" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>日经 225 (NI225)</td><td class="num">58,074.08</td><td class="num up">+1.86%</td><td class="num up">+2.90%</td><td class="num up">+15.36%</td><td>11/26 09:30 BJT 盘中（25日-2.78%）</td><td><a href="https://www.investing.com/indices/japan-ni225-historical-data" target="_blank" rel="noopener noreferrer">Investing.com</a></td></tr>
+        <tr><td>韩国 KOSPI</td><td class="num">4,782.60</td><td class="num up">+1.81%</td><td class="num down">-5.62%</td><td class="num up">+13.49%</td><td>11/26 09:30 BJT 盘中（25日-6.16%）</td><td>Google Finance</td></tr>
+        <tr><td>印度 Nifty 50</td><td class="num">25,819.25</td><td class="num up">+1.85%</td><td class="num up">+1.20%</td><td class="num down">-0.46%</td><td>11/25 最近收盘（今日未开盘）</td><td><a href="https://www.thehindu.com/business/markets/sensex-jumps-1502-points-nifty-surges-to-25819-on-foreign-fund-inflows-lower-crude-oil/article71742244.ece" target="_blank" rel="noopener noreferrer">The Hindu / GF</a></td></tr>
+
+        <tr class="cat-row"><td colspan="7">二、全球主要债券市场（变动单位：基点 bp）</td></tr>
+        <tr><td>美国 2 年期国债</td><td class="num">4.60%</td><td class="num up">-10 bp</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 收盘（26日休市）</td><td><a href="https://tradingeconomics.com/united-states/2-year-note-yield" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>美国 10 年期国债</td><td class="num">4.86%</td><td class="num up">-7 bp</td><td class="num flat">连跌8个交易日</td><td class="num flat">暂无可靠数据</td><td>11/25 收盘（26日休市）</td><td><a href="https://tradingeconomics.com/united-states/government-bond-yield" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>美国 30 年期国债</td><td class="num">5.25%</td><td class="num up">-7 bp</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 收盘（26日休市）</td><td><a href="https://tradingeconomics.com/united-states/30-year-bond-yield" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>美债 2s10s 利差</td><td class="num">+26 bp</td><td class="num flat">+3 bp</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 收盘（26日休市）</td><td><a href="https://fred.stlouisfed.org/series/t10y2y" target="_blank" rel="noopener noreferrer">FRED T10Y2Y</a></td></tr>
+        <tr><td>中国 10 年期国债</td><td class="num">1.61%</td><td class="num down">+1 bp</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 最近收盘</td><td><a href="https://tradingeconomics.com/china/government-bond-yield" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>中国 30 年期国债</td><td class="num">2.071%</td><td class="num down">+1.6 bp</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 最近收盘</td><td><a href="https://cn.investing.com/rates-bonds/china-30-year-bond-yield-historical-data" target="_blank" rel="noopener noreferrer">Investing.com</a></td></tr>
+        <tr><td>日本 10 年期国债</td><td class="num">2.65%</td><td class="num up">-7 bp</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 最近收盘</td><td><a href="https://tradingeconomics.com/japan/government-bond-yield" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>德国 10 年期国债</td><td class="num">3.22%</td><td class="num up">-4.3 bp</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 最近收盘</td><td><a href="https://tradingeconomics.com/germany/30-year-bond-yield" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>美国高收益债 OAS</td><td class="num">372 bp</td><td class="num down">+9 bp</td><td class="num down">+29 bp</td><td class="num down">+91 bp</td><td>11/24 T+1 最新日终</td><td><a href="https://fred.stlouisfed.org/data/BAMLH0A0HYM2" target="_blank" rel="noopener noreferrer">FRED (ICE BofA)</a></td></tr>
+
+        <tr class="cat-row"><td colspan="7">三、外汇市场</td></tr>
+        <tr><td>美元指数 (DXY)</td><td class="num">103.72</td><td class="num flat">+0.02%</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/26 早盘（25日-0.14%）</td><td><a href="https://tradingeconomics.com/united-states/currency" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>在岸人民币 (USD/CNY)</td><td class="num">6.6645</td><td class="num flat">0.00%</td><td class="num up">-0.19%</td><td class="num up">-4.74%</td><td>11/26 09:36 盘中实时</td><td>Google Finance</td></tr>
+        <tr><td>离岸人民币 (USD/CNH)</td><td class="num">6.6676</td><td class="num flat">25日-57bp</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/26 早盘实时</td><td><a href="https://hk.investing.com/currencies/usd-cnh" target="_blank" rel="noopener noreferrer">Investing.com</a></td></tr>
+        <tr><td>美元/日元 (USD/JPY)</td><td class="num">159.05</td><td class="num up">-0.11%</td><td class="num down">+0.31%</td><td class="num down">+1.39%</td><td>11/26 09:36 盘中实时</td><td>Google Finance</td></tr>
+        <tr><td>欧元/美元 (EUR/USD)</td><td class="num">1.0966</td><td class="num flat">-0.04%</td><td class="num down">-0.07%</td><td class="num down">-6.53%</td><td>11/26 09:36 盘中实时</td><td><a href="https://tradingeconomics.com/euro-area/currency" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>美元/韩元 (USD/KRW)</td><td class="num">1,343.90</td><td class="num flat">-0.01%</td><td class="num flat">-0.01%</td><td class="num up">-6.91%</td><td>11/26 09:36 盘中（加息后）</td><td>Google Finance</td></tr>
+
+        <tr class="cat-row"><td colspan="7">四、大宗商品</td></tr>
+        <tr><td>现货黄金 (XAU/USD)</td><td class="num">$3,563.66/oz</td><td class="num down">-0.70%</td><td class="num flat">25日最低$3,426</td><td class="num flat">暂无可靠数据</td><td>11/26 早盘（25日-2.18%）</td><td><a href="https://tradingeconomics.com/commodity/gold" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>现货白银 (XAG/USD)</td><td class="num">$41.09/oz</td><td class="num down">-0.73%</td><td class="num flat">25日+1.12%</td><td class="num flat">暂无可靠数据</td><td>11/26 早盘实时</td><td><a href="https://tradingeconomics.com/commodity/silver" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>WTI 原油 (NYMEX)</td><td class="num">$84.16/桶</td><td class="num up">+2.57%</td><td class="num flat">暂无可靠数据</td><td class="num up">+43.04%</td><td>11/25 收盘（26日休市清淡）</td><td><a href="https://tradingeconomics.com/commodity/crude-oil" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>布伦特原油 (ICE)</td><td class="num">$94.66/桶</td><td class="num up">+3.57%</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 收盘 / 26日早盘</td><td><a href="https://tradingeconomics.com/commodity/brent-crude-oil" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>铜 (COMEX / LME)</td><td class="num">$5.42/lb</td><td class="num up">+1.55%</td><td class="num flat">LME $11,882</td><td class="num flat">暂无可靠数据</td><td>11/26 早盘 / 25日收盘</td><td><a href="https://tradingeconomics.com/commodity/copper" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>美国天然气 (Henry Hub)</td><td class="num">$3.69/MMBtu</td><td class="num up">+0.68%</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/25 收盘（26日休市清淡）</td><td><a href="https://tradingeconomics.com/commodity/natural-gas" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td>铁矿石 (62% Fe)</td><td class="num">$91.25/吨</td><td class="num flat">-0.03%</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/26 早盘实时</td><td><a href="https://tradingeconomics.com/commodity/iron-ore" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+
+        <tr class="cat-row"><td colspan="7">五、风险指标、加密资产与美联储利率预期</td></tr>
+        <tr><td>VIX 恐慌指数</td><td class="num">28.29</td><td class="num down">+7.32%</td><td class="num up">-0.53%</td><td class="num down">+97.42%</td><td>11/25 收盘（盘中最高34.95）</td><td><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank" rel="noopener noreferrer">Charles Schwab / GF</a></td></tr>
+        <tr><td>MOVE 债券波动率</td><td class="num">98.84</td><td class="num up">-2.05%</td><td class="num flat">暂无可靠数据</td><td class="num flat">暂无可靠数据</td><td>11/24 T+1 日终收盘</td><td><a href="https://en.macromicro.me/collections/4536/volatility/35584/us-treasury-move-index" target="_blank" rel="noopener noreferrer">MacroMicro</a></td></tr>
+        <tr><td>比特币 (BTC/USD)</td><td class="num">$60,602.90</td><td class="num up">+0.41%</td><td class="num down">-1.36%</td><td class="num down">-31.34%</td><td>11/26 09:36 7×24实时</td><td>Google Finance</td></tr>
+        <tr><td>以太坊 (ETH/USD)</td><td class="num">$1,696.60</td><td class="num up">+0.34%</td><td class="num down">-3.34%</td><td class="num down">-42.89%</td><td>11/26 09:35 7×24实时</td><td>Google Finance</td></tr>
+        <tr><td>美联储 2026/12/09 预期</td><td class="num">加息25bp</td><td class="num down">概率 97.8%</td><td class="num flat">当前3.75-4.00%</td><td class="num flat">27年1月偏鹰</td><td>10月PCE公布后 CME FedWatch</td><td><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank" rel="noopener noreferrer">Charles Schwab</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid-2">
+    <div class="item-rule">
+      <h3>过去 24 小时核心异动解析</h3>
+      <p>波动最剧烈的资产呈现“昨日崩盘、今日修复”的双向撕裂：11 月 25 日 <strong>KOSPI（-6.16%）</strong>与 <strong>A 股科创 50（-5.12%）</strong>遭三星（-9.87%）、SK 海力士（-10.32%）及关税消息砸盘，今早随美股深 V 迅速反弹逾 1.2%–1.8%；<strong>布伦特原油（+3.57% 至 94.66 美元）</strong>受胡塞袭击沙特炼油厂催化大涨；<strong>VIX（+7.32% 至 28.29）</strong>盘中一度飙破 34.95；<strong>印度 Nifty 50（+1.85%）</strong>与<strong>墨西哥 IPC（+2.99%）</strong>则承接了逃离拥挤 AI 交易的外资轮动买盘。</p>
+    </div>
+    <div class="item-rule">
+      <h3>跨资产异常背离信号</h3>
+      <p>最突出的反常现象是<strong>核心 PCE 创三年新高（3.3%）与 Q3 GDP 上修至 4.3%，但美债收益率全线大跌 7–10bp</strong>——说明 AI 抛售与关税风险触发的避险买盘压倒了通胀定价。同时，<strong>股票尾盘深 V 与信用利差走阔背离</strong>：美国高收益债 OAS 攀升至 372bp（5 日 +29bp）、英伟达遭标普负面信用观察，提示债市仍未解除对高利率下 AI 债务链条的警报。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 03｜全球宏观经济与政策动态 -->
+<section class="sec">
+  <h2>03｜全球宏观经济与政策动态 Global Macro</h2>
+  <div class="grid-2">
+    <div class="item-rule">
+      <h3><span class="prio p1">P1</span>美国 10 月 PCE 与个人收支：核心通胀创三年新高，实际消费零增长</h3>
+      <p><strong>关键数据：</strong>10 月整体 PCE 同比 <strong>3.8%</strong>（预期 3.8%）、环比 +0.3%（前值 +0.5%）；<strong>核心 PCE 同比 3.3%</strong>（创 2023 年 11 月以来新高，预期 3.2%）、环比 +0.3%。个人收入环比 +0.7%（预期 +0.4%），但名义消费环比 +0.3%（预期 +0.4%），<strong>实际 PCE 环比 0.0%</strong>。</p>
+      <p><strong>预期差与影响：</strong>通胀高于预期封杀鸽派幻想（12 月加息概率升至 97.8%），而实际消费停滞暴露高利率侵蚀需求的滞胀裂痕。来源：<a href="https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026" target="_blank" rel="noopener noreferrer">BEA 官方公报</a>（11-25 21:30 BJT）。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3><span class="prio p1">P1</span>美国 Q3 GDP 二读大幅上修至 4.3%，初请创低位</h3>
+      <p><strong>关键数据：</strong>Q3 实际 GDP 年化季率二读 <strong>+4.3%</strong>（初值 +3.4%，预期 +3.5%），最终国内需求达 +5.8%；截至 11 月 21 日当周初请失业金 <strong>18.9 万人</strong>（预期 20.1 万，前值 20.2 万），续请降至 169.7 万创三年半新低；10 月耐用品订单环比 +0.2%（预期 +0.7%，受飞机拖累）。</p>
+      <p><strong>预期差与影响：</strong>强劲内需与就业缓解了“AI 回调拖垮实体经济”的担忧，支撑美股尾盘深 V。来源：<a href="https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.economic-indicators.scotia-flash.-november-25--2026-.html" target="_blank" rel="noopener noreferrer">Scotiabank</a>（11-26 08:30 BJT）。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3><span class="prio p1">P1</span>USTR 正式抛出 14 国 301 关税方案（15%–35%），中方回应</h3>
+      <p><strong>政策细节：</strong>USTR 就结构性产能过剩与工业补贴 301 调查作出肯定裁定，拟对 14 个经济体加征广泛关税：越南最高 35%、印度 25%、中国叠加 20%、欧盟最高 20%、日韩 15%。中国外交部回应称关税战不符合任何一方利益，应平等协商解决。</p>
+      <p><strong>预期差与影响：</strong>方案未推迟且叠加幅度偏严厉，抬升美国中期通胀底部并对亚欧制造业构成估值折价。来源：<a href="https://ustr.gov/sites/default/files/files/Press/Releases/2026/SECP%20301%20China%20report.pdf" target="_blank" rel="noopener noreferrer">USTR 官方报告</a>、<a href="https://www.stocktitan.net/articles/new-tariffs-14-economies-section-301-2026" target="_blank" rel="noopener noreferrer">Stock Titan</a>（11-26 00:30–03:30 BJT）。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3><span class="prio p1">P1</span>美国 7 年期美债拍卖现 1bp 尾部利差；美联储褐皮书警示关税与薪资压力</h3>
+      <p><strong>关键细节：</strong>440 亿美元 7 年期美债中标利率 <strong>4.708%</strong>，尾部利差 +1.0bp，投标倍数 2.43x（前次 2.46x）。美联储 11 月褐皮书显示 8 个辖区轻微至温和增长、4 个持平，但薪资增速由“轻微”升至“温和”，关税、能源与运费令企业投入成本涨幅高于售价。</p>
+      <p><strong>预期差与影响：</strong>与 10 月核心 PCE 交叉印证，企业利润率面临成本转嫁受阻挤压。来源：<a href="https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm" target="_blank" rel="noopener noreferrer">美联储褐皮书原文</a>（11-26 03:00 BJT）、<a href="https://www.morningstar.com/news/dow-jones/202611255732/us-7-year-treasury-auction-shows-softer-demand" target="_blank" rel="noopener noreferrer">Dow Jones</a>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3><span class="prio p1">P1</span>韩国央行加息 25bp 至 3.25% 并备战稳市；澳洲 CPI 飙升至 4.9%</h3>
+      <p><strong>关键细节：</strong>韩国央行今早加息 25bp 至 3.25%（年内第三次），将 2026/2027 年 GDP 预测上修至 3.9%/4.1%；韩国政府同时摸底 25 家金融机构拟扩容股市稳定基金。澳大利亚 10 月 CPI 跳升至 4.9%（预期 4.7%）。</p>
+      <p><strong>预期差与影响：</strong>发达与亚洲半导体经济体同步紧缩，非美利率上行牵制全球风险偏好。来源：<a href="https://www.koreaherald.com/article/10949940" target="_blank" rel="noopener noreferrer">The Korea Herald</a>（11-26 09:05 BJT）、<a href="https://www.cls.cn/detail/2544794" target="_blank" rel="noopener noreferrer">财联社</a>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3><span class="prio p1">P1</span>中东炼油厂遇袭推升油价；中国创业板做市提速与 123 企获回购贷</h3>
+      <p><strong>关键细节：</strong>胡塞武装宣称袭击沙特最大炼油厂拉斯塔努拉，叠加密谋打击伊朗高层报道，布伦特大涨 3.57% 至 94.66 美元；刚果（金）11 月 30 日起暂停钴出口至少四个月。国内方面，创业板引入做市商制度加速筹备（约 20 家券商有望入围），11 月以来 123 家 A 股公司获回购增持专项贷款承诺函。</p>
+      <p><strong>潜在影响：</strong>油价突发地缘溢价压制通胀回落预期；国内回购贷与做市改革为弱势 A 股构筑制度性底部支撑。来源：<a href="https://www.marketindex.com.au/news/morning-wrap-asx-200-to-rise-s-and-p-500-and-nasdaq-pare-ai-rout-trump" target="_blank" rel="noopener noreferrer">Market Index</a>、<a href="https://www.163.com/dy/article/LCL7MRVU0552C2FY.html" target="_blank" rel="noopener noreferrer">上海证券报</a>（11-26 08:30 BJT）。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 04｜中美资本市场重要新闻 -->
+<section class="sec">
+  <h2>04｜中美资本市场重要新闻 Market News</h2>
+  <div class="grid-2">
+    <div>
+      <h3>美国资本市场：信用排雷与绩优股深 V 共舞</h3>
+      <ul class="clean-list">
+        <li><strong>标普将英伟达（NVDA）列入负面信用观察，NVDA 收跌 3.91%：</strong>标普全球以董事会独立性与关键人物风险为由将英伟达“AA”评级列入负面观察（90 天内或下调一档）；叠加 SemiAnalysis 披露 SpaceX 下调 Blackwell 小集群租金最高 35%，存储与设备股美光（-4.53%）、泛林（-5.68%）、甲骨文（-5.13%）继续承压（<a href="https://cappnotes.substack.com/p/closing-look-wednesday-november-25" target="_blank" rel="noopener noreferrer">CappNotes</a>，<a href="https://www.cls.cn/detail/2544794" target="_blank" rel="noopener noreferrer">财联社</a>）。</li>
+        <li><strong>戴尔（DELL）与 Anthropic（ANT）双双深 V 翻红：</strong>戴尔在创纪录 1,323 亿美元 AI 订单与 250 亿美元回购护航下，由盘中跌 7.5% 逆转收涨 +0.60%；Anthropic 受 ARK 连续扫货及 Rust 重写 API 节省 70% CPU 催化，收涨 +1.07% 报 82.79 美元，逼近 83 美元发行价（<a href="https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results" target="_blank" rel="noopener noreferrer">Dell IR</a>，<a href="https://www.anthropic.com/research/migrating-api-to-rust" target="_blank" rel="noopener noreferrer">Anthropic</a>）。</li>
+        <li><strong>FCC 批准 SpaceX 100 万颗轨道 AI 卫星：</strong>SpaceX 获批部署太阳能轨道计算卫星“Starmind”，盘中由跌超 5% 逆转收涨 +1.30% 至 127.44 美元（<a href="https://spaceflightnow.com/2026/11/26/fcc-green-lights-spacexs-plan-to-launch-1-million-starmind-data-center-satellites/" target="_blank" rel="noopener noreferrer">Spaceflight Now</a>）。</li>
+        <li><strong>财报分化与美国 ETF 规模破 15 万亿美元：</strong>惠普（HPQ +11.49%）、迪尔（DE +4.44%）、Meta（+3.40%）领涨，而安霸（-19.77%）、Nutanix（-15.19%）因指引不及预期暴跌；ICI 披露美国 ETF 总规模历史性突破 15 万亿美元（<a href="https://www.stocktitan.net/articles/stock-market-today-live-november-25-2026" target="_blank" rel="noopener noreferrer">Stock Titan</a>，<a href="https://www.investmentnews.com/etfs/etf-market-surges-past-15-trillion-in-a-selloff-driven-week/269168" target="_blank" rel="noopener noreferrer">InvestmentNews</a>）。</li>
+      </ul>
+    </div>
+    <div>
+      <h3>中国 A 股及港股：尾盘护盘托底与今早共振修复</h3>
+      <ul class="clean-list">
+        <li><strong>A 股 25 日失守 3,500 点、宁德时代跌破万亿，宽基 ETF 尾盘骤然放量：</strong>昨日沪指跌 2.03% 报 3,476.47 点、4,926 股下跌、宁德时代重挫逾 8% 市值破万亿；但尾盘 20 分钟沪深 300ETF 华夏（超 110 亿）、易方达（超 80 亿）及上证 50ETF（超 40 亿）集中放量护盘，交通银行、长江电力逆势创历史新高（<a href="https://finance.eastmoney.com/a/202611253939727773.html" target="_blank" rel="noopener noreferrer">东方财富</a>，<a href="https://www.sohu.com/a/1106220746_222256?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334" target="_blank" rel="noopener noreferrer">财联社</a>）。</li>
+        <li><strong>港股 25 日跌破 22,000 点获南向净买 64.34 亿港元，今早强势反弹：</strong>昨日华虹宏力跌超 13% 拖累恒指收报 21,966 点，但南向资金逆势加仓宽基 ETF 64.34 亿港元（11 月累计超 200 亿）；隔夜金龙指数涨 1.87% 带动今早恒科高开 2.29%（<a href="https://www.cls.cn/detail/2544539" target="_blank" rel="noopener noreferrer">财联社</a>）。</li>
+        <li><strong>理想汽车 Q3 毛利率环比大升 5.7 个百分点：</strong>Q3 营收 288.34 亿元（+5.4%）、交付 99,964 辆、毛利率回升至 16.7%，并指引 Q4 交付 11 万–11.5 万辆（<a href="https://auto.sina.cn/2026-11-26/detail-inizyqvt9296680.d.html?vt=4" target="_blank" rel="noopener noreferrer">新浪汽车</a>）；美团将于明日（11/27）盘后放榜。</li>
+        <li><strong>晚间公告与算力租赁：</strong>珠免集团拟购免税公司 49% 股权今起复牌；江苏雷利子公司鼎智科技遭证监会立案；国银、工银等金融租赁巨头加速入局算力硬件采购（部分机构超 200 亿元）（<a href="https://emwap.eastmoney.com/a/202611253939917411.html" target="_blank" rel="noopener noreferrer">东方财富公告</a>）。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 05｜国际投行及顶级研究机构观点 -->
+<section class="sec">
+  <h2>05｜国际投行及顶级研究机构观点 Institutional Research</h2>
+  <p class="measure">11 月 24–25 日，随着 10 月核心 PCE 与 AI 信用利差成为焦点，华尔街投行与全球最大债基密集更新 2027 年核心策略，呈现“股权看盈利扩散、信用看负债表恶化、商品看原油过剩与黄金修复”的三重分化。</p>
+
+  <figure>
+    <div class="fig-title">AI 信用市场警报拉响：CoreWeave、软银与甲骨文 5 年期 CDS 利差急剧走阔</div>
+    <svg viewBox="0 0 700 320" width="100%" role="img" aria-label="AI基建与高收益债信用利差对比柱状图">
+      <!-- X scale: 0 to 1400 bp => x=190 to 630 (width 440px, 100bp = 31.43px) -->
+      <line x1="190" y1="22" x2="190" y2="278" stroke="#0F172A" stroke-width="1.5"/>
+      <line x1="316" y1="22" x2="316" y2="278" stroke="#D5DCE4" stroke-width="1"/>
+      <line x1="441" y1="22" x2="441" y2="278" stroke="#D5DCE4" stroke-width="1"/>
+      <line x1="567" y1="22" x2="567" y2="278" stroke="#D5DCE4" stroke-width="1"/>
+
+      <text x="190" y="298" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">0 bp</text>
+      <text x="316" y="298" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">400 bp</text>
+      <text x="441" y="298" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">800 bp</text>
+      <text x="567" y="298" text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="13" fill="#334155">1,200 bp</text>
+
+      <!-- 1. CoreWeave 5Y CDS: 1314 bp -> w=413 -->
+      <text x="178" y="56" text-anchor="end" font-size="14" fill="#0F172A">CoreWeave 5Y CDS</text>
+      <rect x="190" y="39" width="413" height="24" fill="#991B1B"/>
+      <text x="611" y="56" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#991B1B">1,314 bp</text>
+
+      <!-- 2. SoftBank 5Y CDS: 501 bp -> w=157 -->
+      <text x="178" y="108" text-anchor="end" font-size="14" fill="#0F172A">软银 (SFTBY) 5Y CDS</text>
+      <rect x="190" y="91" width="157" height="24" fill="#B91C1C"/>
+      <text x="357" y="108" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#991B1B">501 bp</text>
+
+      <!-- 3. US HY OAS: 372 bp -> w=117 -->
+      <text x="178" y="160" text-anchor="end" font-size="14" fill="#0F172A">美国高收益债 OAS</text>
+      <rect x="190" y="143" width="117" height="24" fill="#0F766E"/>
+      <text x="317" y="160" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#115E59">372 bp</text>
+
+      <!-- 4. Oracle 5Y CDS (Nov 25): 360 bp -> w=113 -->
+      <text x="178" y="212" text-anchor="end" font-size="14" fill="#0F172A">Oracle 5Y CDS (当前)</text>
+      <rect x="190" y="195" width="113" height="24" fill="#B91C1C"/>
+      <text x="313" y="212" font-family="JetBrains Mono, monospace" font-size="14" font-weight="600" fill="#991B1B">360 bp</text>
+
+      <!-- 5. Oracle 5Y CDS (Mid-2025 baseline): 35 bp -> w=11 -->
+      <text x="178" y="264" text-anchor="end" font-size="14" fill="#334155">Oracle 5Y CDS (2025年中)</text>
+      <rect x="190" y="247" width="11" height="24" fill="#94A3B8"/>
+      <text x="211" y="264" font-family="JetBrains Mono, monospace" font-size="14" fill="#334155">35 bp (十倍走阔)</text>
+    </svg>
+    <figcaption>单位：基点（bp）；CoreWeave 1,314bp 隐含 5 年违约概率约 68%，Oracle 由 2025 年中 35bp 飙升十倍。来源：S&amp;P Global、Tradeweb、FRED、Benzinga（2026-11-25）。</figcaption>
+  </figure>
+
+  <div class="grid-2">
+    <div class="item-rule">
+      <h3>PIMCO 品浩｜《信用市场镜头》（11月23日，原始官网发布）</h3>
+      <p><strong>核心观点：</strong>Lotfi Karoui 团队量化了 AI 发债潮对债市的扭曲——Amazon、Alphabet、Meta 与 Nvidia 四家已占美国 AA 级公司债指数 <strong>35%</strong>，导致投资级（IG）出现“远离 AI 债的评级压缩”（BBB 对 AA 利差收窄至历史极值）；而高收益债（HY）中 CCC 级面临再融资悬崖，未来两年到期再融资票息将飙升约 <strong>10 个百分点</strong>。来源：<a href="https://www.pimco.com/us/en/insights/the-credit-market-lens-making-sense-of-diverging-signals-in-investment-grade-and-high-yield-credit" target="_blank" rel="noopener noreferrer">PIMCO 官网原文</a>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>Bank of America 美国银行｜Savita Subramanian 2027 展望（11月25日，权威媒体转述）</h3>
+      <p><strong>核心预测：</strong>给出华尔街主要投行<strong>最低的 2027 年底标普 500 目标——7,800 点</strong>（牛市 8,500 / 熊市 6,600），仅相当于收复今年 10 月高点。核心担忧在于新股/IPO 供给上升而企业回购放缓导致美股筹码供需恶化；上调通信服务与可选消费至超配、下调必需消费至低配。来源：<a href="https://investinglive.com/stock-market-update/bofa-sees-s-p-500-at-7-800-by-end-2027-a-target-that-only-takes-it-back-to-october/" target="_blank" rel="noopener noreferrer">InvestingLive</a>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>J.P. Morgan 摩根大通｜2027 美股与大宗商品双展望（11月24–25日，权威媒体转述）</h3>
+      <p><strong>美股（Dubravko Lakos-Bujas）：</strong>2027 年底标普目标 <strong>8,200 点</strong>（基于 17% EPS 增速），偏审慎主因预计美联储在 2027 年 4 月前还将<strong>加息 3 次</strong>（<a href="https://www.morningstar.com/news/marketwatch/2026112586/the-sp-500-is-headed-to-8200-and-downturns-like-this-one-are-actually-part-of-the-reason-says-jpmorgan" target="_blank" rel="noopener noreferrer">MarketWatch</a>）。</p>
+      <p><strong>商品（Natasha Kaneva）：</strong>预计 2027 年原油面临近 800 万桶/日“供应洪峰”与 160 万桶/日过剩，<strong>布伦特 2027H2 跌至 60 美元高位</strong>；铜跌向 11,000 美元/吨；但<strong>黄金 2027Q4 看高至 4,500 美元/盎司</strong>（<a href="https://www.rigzone.com/news/jp_morgan_outlines_oil_outlook_for_2027_2028-25-nov-2026-185163-article/" target="_blank" rel="noopener noreferrer">Rigzone</a>，<a href="https://in.investing.com/news/commodities-news/jpmorgan-sees-base-metals-weakness-gold-recovery-ahead-5725245" target="_blank" rel="noopener noreferrer">Reuters</a>）。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>Morgan Stanley 摩根士丹利｜全球 AI 贸易向电力电网扩散（11月25日，权威媒体转述）</h3>
+      <p><strong>核心预测：</strong>预计云厂商 CapEx 在 2027/2028 年达 <strong>1.6 万亿 / 1.8 万亿美元</strong>，美国 2027 年数据中心电力缺口达 <strong>23GW</strong>；AI“芯片通胀”及电力设备瓶颈将推高 2026/2027 年美国核心 PCE 约 30bp/20bp。增量指出得州与俄亥俄州监管将推迟 5GW 美国落地，倒逼基建向欧、印、东南亚外溢。来源：<a href="https://www.tradingview.com/news/seekingalpha:c7c15cb53094b:0-global-ai-trade-to-broaden-beyond-chips-into-power-grid-morgan-stanley/" target="_blank" rel="noopener noreferrer">Seeking Alpha</a>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>UBS 瑞银｜王宗豪 2027 中国股市策略（11月24日，权威媒体转述）</h3>
+      <p><strong>核心预测：</strong>2027 年底 <strong>MSCI 中国目标 76 点</strong>（约 +12.9%）、<strong>恒指目标 26,000 点</strong>，预计 EPS 增长 10%、广义财政赤字率提升 1 个百分点。推荐<strong>“AI 硬件（受益国产 HBM 与替代）+ 银行（息差企稳）”哑铃策略</strong>，低配消费与汽车。来源：<a href="https://www.yicaiglobal.com/news/ubs-sees-better-risk-reward-profile-for-chinas-stocks-in-2027-targeting-msci-china-index-at-76" target="_blank" rel="noopener noreferrer">第一财经国际</a>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>BlackRock 贝莱德智库 &amp; Deutsche Bank 德银（11月23–24日，官网发布 + 媒体转述）</h3>
+      <p><strong>贝莱德（原始官网）：</strong>Wei Li 团队反驳市场 3 次加息定价，预计能源冲击反转将拉低 2027 年底通胀 0.8 个百分点，美联储仅加息 2 次；战术<strong>超配短端美债与新兴市场</strong>，对中国与美股均持中性（<a href="https://www.blackrock.com/sg/en/insights/global-weekly-commentary" target="_blank" rel="noopener noreferrer">BlackRock 官网</a>）。<strong>德银</strong>坚守华尔街最高的 2027 年底标普 <strong>9,000 点</strong>目标，押注极低仓位与布油回落至 70 美元（<a href="https://www.fxstreet.com/news/sp-500-strong-rebound-and-ambitious-2027-target-deutsche-bank-202611240833" target="_blank" rel="noopener noreferrer">FXStreet</a>）。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 06｜知名投资人及企业家最新观点 -->
+<section class="sec">
+  <h2>06｜知名投资人及企业家最新观点 Smart Money Views</h2>
+  <p class="meta-note">严格核验时间窗口（2026年11月24日—26日）：仅纳入有真实新增发声或每日交易记录的 3 位核心人物；Ray Dalio、Howard Marks、Warren Buffett、Stanley Druckenmiller、David Tepper、Paul Tudor Jones、Larry Fink、Jamie Dimon、Jeff Gundlach、Michael Hartnett 均无此窗口内新增市场观点（Bill Ackman 3% 通胀目标原帖为 11 月 22 日，不重复计入新增）。</p>
+
+  <div class="grid-2">
+    <div class="item-rule">
+      <h3>Michael Burry（迈克尔·伯里）｜《大空头》原型、Scion 创始人</h3>
+      <p><strong>时间与属性：</strong>11 月 25 日于 Substack 发布专栏更新，含<strong>公开发言 + 自述真实持仓调整</strong>（<a href="https://mlq.ai/news/michael-burry-sells-his-last-nasdaq-100-puts-and-says-his-portfolio-is-now-mostly-long/" target="_blank" rel="noopener noreferrer">MLQ.ai</a>，<a href="https://www.benzinga.com/markets/equities/26/11/63653199/michael-burry-is-bullish" target="_blank" rel="noopener noreferrer">Benzinga</a>）。</p>
+      <p><strong>重大战术转向：</strong>25 日盘中清仓剩余全部 <strong>Nasdaq 100 看跌期权</strong>，组合转为“临时几乎全面做多”（留存约 25% 现金），因 VIX 高位下买 Put 赔率恶化。最大多头转向海外与超跌股：<strong>MercadoLibre、京东（含 2029 Call）及港股比亚迪、腾讯、美团、海底捞、海尔智家</strong>；仅保留 Palantir 与 MetLife（警惕私人信贷违约）空单，并明确表示若 <strong>NVDA 反弹至 200 美元将再度做空</strong>（<a href="https://www.tradingview.com/news/invezz:95760e39d094b:0-michael-burry-plans-next-nvidia-short-near-200/" target="_blank" rel="noopener noreferrer">Invezz</a>）。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>Cathie Wood（凯茜·伍德）｜ARK Invest 创始人</h3>
+      <p><strong>时间与属性：</strong>11 月 25 日盘后 <strong>ARK 每日实际交易披露</strong>（无新增公开专访，属真金白银调仓）（<a href="https://www.investing.com/news/company-news/cathie-woods-ark-adds-to-anthropics-stock-trims-netflix-93CH-5051847" target="_blank" rel="noopener noreferrer">Investing.com</a>）。</p>
+      <p><strong>连续逆势扫货：</strong>25 日再度买入 <strong>Anthropic（ANT）2,597 万美元</strong>（连续两日合计抄底 106.8 万股、约 <strong>9,185 万美元</strong>），同时加仓刚获 FCC 批文的 <strong>SpaceX（475 万美元）</strong>及基因编辑股（CRSP/TWST/TEM）；资金来自减持 Netflix、Roblox 与 Illumina，延续“暴跌抄底前沿大模型与太空算力”的激进换仓。</p>
+    </div>
+  </div>
+  <p class="meta-note">此外，<strong>Elon Musk（马斯克）</strong>继 11 月 24 日在 X 警告 AI 硬件交付与变现错配将引爆 2027 年数千亿美元现金危机后，11 月 25 日公开回应 FCC 批准 SpaceX 100 万颗“Starmind”轨道 AI 卫星计划，强化其绕开地面电网瓶颈的叙事（<a href="https://decrypt.co/383991/elon-musk-spacex-fcc-approval-ai-data-centers-space" target="_blank" rel="noopener noreferrer">Decrypt</a>）。</p>
+</section>
+
+<!-- 07｜X平台市场热点与异常信号 -->
+<section class="sec">
+  <h2>07｜X 平台市场热点与异常信号 Social Intelligence</h2>
+  <p class="meta-note">覆盖局限说明：因无法直接调用 X 实时 API 拉取原生时间线与互动计数，本模块基于权威财经媒体、期权监测平台及社区快照对 X 高影响力讨论的交叉核验整理，未获可靠记录的互动数据均标注“暂无可靠数据”。</p>
+
+  <div class="grid-2">
+    <div class="item-rule">
+      <h3>1. “CDS don't lie”刷屏：AI 信用利差彻底撕裂科技阵营</h3>
+      <p><strong>市场异动与讨论逻辑：</strong>CoreWeave 5Y CDS 飙至 1,314bp、Oracle 达 360bp、软银达 501bp。Chamath Palihapitiya 发帖 <em>“CDS don't lie”</em> 引爆热议，ZeroHedge 转引高盛交易台指出，信用市场已将 AI 彻底切割为“自有现金流巨头”与“高杠杆债主”（互动数据：暂无可靠数据，<a href="https://www.benzinga.com/markets/tech/26/11/63657437/cds-dont-lie-chamath-warns-as-credit-markets-sound-the-alarm" target="_blank" rel="noopener noreferrer">Benzinga</a>）。<strong>可信度：已证实事实</strong>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>2. 核心 PCE + 14 国 301 关税双重打击下，纳指盘中触及熊市线后深 V</h3>
+      <p><strong>市场异动与讨论逻辑：</strong><code>@KobeissiLetter</code> 盘前警示三星/SK 海力士暴跌拖累 NVDA，X 宏观圈聚焦“强 GDP 与 3.3% 核心 PCE 锁死 12 月加息，但资金正大规模轮动至等权标普（RSP +0.83%）与中小盘”（互动数据：暂无可靠数据，<a href="https://pro.edgex.exchange/news/article/deutsche-bank-sp-500-9000-2027-ai-forecast" target="_blank" rel="noopener noreferrer">edgeX 社区流</a>）。<strong>可信度：已证实事实</strong>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>3. 戴尔财报爆表反遭盘前重挫 -8.5%，“硬件周期见顶”激辩</h3>
+      <p><strong>市场异动与讨论逻辑：</strong>戴尔 1,323 亿 AI 订单却盘前大跌后翻红，Morningstar 同日上调盈利但下调公允价值，X 交易员热议“业绩超预期但估值收缩”是否成 2027 年算力股常态（互动数据：暂无可靠数据，<a href="https://uk.investing.com/news/stock-market-news/dell-earnings-analysis-questions-answered-and-next-catalysts-93CH-5004687" target="_blank" rel="noopener noreferrer">Investing.com</a>）。<strong>可信度：事实 + 主观叙事</strong>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>4. Anthropic 破发叠加开发者“24 小时蒸馏通牒”风波</h3>
+      <p><strong>市场异动与讨论逻辑：</strong>ANT 尾盘微涨至 82.79 美元仍处破发；同日开发者指控 Anthropic 无证据发出 24 小时蒸馏调查通牒在 Hacker News 获 <strong>310 points、239 评论</strong>并外溢至 X，引发闭源 API 依赖风险讨论（<a href="https://emergent.sh/news/anthropic-sends-24-hour-distillation" target="_blank" rel="noopener noreferrer">Emergent</a>）。<strong>可信度：有一定证据但尚未完全证实</strong>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>5. 黄金深 V 与 ETF 巨额赎回：去杠杆抛压是否接近尾声？</h3>
+      <p><strong>市场异动与讨论逻辑：</strong><code>@KobeissiLetter</code> 披露美国黄金 ETF 上周净流出 12 吨，BCA Research 平仓持有 4 年的黄金多头；但昨日黄金击穿 3,500 美元探底 3,426 美元后翻红，X 热议“科技股追缴保证金的强平盘或已阶段性出清”（互动数据：暂无可靠数据，<a href="https://www.benzinga.com/etfs/specialty-etfs/26/11/63637751/gold-etfs-are-losing-billions-central-banks-just-sent-a-very-different-signal" target="_blank" rel="noopener noreferrer">Benzinga</a>）。<strong>可信度：事实 + 投机性叙事</strong>。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>6. 期权异动：NVDA 0DTE 巨单买 Put 与 SpaceX 远期 Put 爆量 18.5 倍</h3>
+      <p><strong>市场异动与讨论逻辑：</strong>25 日全市场最大 0DTE 单笔交易为买入 9,007 张 NVDA $144 Put；同时 SpaceX 2027 年 8 月 $95 Put 成交超 2,100 张（未平仓合约的 18.5 倍），显示机构在 VIX 逼近 30 时一边买短期尾部保护、一边卖远期深度虚值 Put 收割高波动率权利金（<a href="https://optioncharts.io/options/NVDA/unusual-options" target="_blank" rel="noopener noreferrer">OptionCharts</a>）。<strong>可信度：已证实事实</strong>。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 08｜跨资产分析与市场预期差 -->
+<section class="sec">
+  <h2>08｜跨资产分析与市场预期差 Market Insights</h2>
+  <p class="measure">隔夜盘面给出了极高含金量的结构性信号：尽管核心 PCE（3.3%）与 14 国 301 关税双双落地，但市场并未陷入无差别 Risk-off——道指与罗素 2000 翻红、美债长短端利率大跌 7–10bp、大空头伯里平仓指数空单。市场正从“宏观单边杀估值”转向<strong>“信用分层排雷 + 跨区域/跨风格再平衡”</strong>。</p>
+
+  <blockquote class="pull">当 3.3% 的核心 PCE 都推不动美债收益率上行、反而走出 -7bp 的避险大涨时，债市传递的真正信号是：市场对“高利率+关税+AI 债务违约”拖累 2027 年增长的担忧，已经开始超过对通胀本身的恐惧。</blockquote>
+
+  <div class="grid-2">
+    <div class="item-rule">
+      <h3>洞察一：“债市避险买盘 vs 信用利差走阔”宣告 AI 交易进入资产负债表筛选期</h3>
+      <p><strong>事实与逻辑：</strong>国债收益率大跌 7–10bp 的同时，CoreWeave/Oracle/软银 CDS 创纪录且标普将英伟达列入负面观察，印证资金正做“多国债+多自由现金流蓝筹、空高杠杆算力基建债”的精细对冲（客观事实为利差走阔与评级观察，推断为估值体系分层）。</p>
+      <p><strong>催化剂与失效条件：</strong>关注 12 月 9 日加息后信用市场融资窗口是否继续冻结；若美债收益率迅速跌破 4.5% 且信用利差回落，高杠杆算力股将获喘息。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>洞察二：伯里平空转多 + 宽基 ETF 尾盘护盘，提示短期恐慌情绪已触及战术拐点</h3>
+      <p><strong>事实与逻辑：</strong>VIX 盘中飙至 34.95、纳指 100 触及 -20% 熊市线后，美股与金银同步走出深 V，A 股沪深 300/上证 50 ETF 尾盘 20 分钟放量逾 230 亿，韩国酝酿扩容稳市基金，说明政策底与空头回补正在形成短期缓冲。</p>
+      <p><strong>催化剂与失效条件：</strong>催化剂为感恩节清淡期后的空头回补与亚太补涨；若明日东京 CPI 爆表或中东局势升级令布油突破 100 美元，反弹将被迅速证伪。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>洞察三：中东炼油厂遇袭与摩根大通“2027 原油供应洪峰”构成强烈短长期预期差</h3>
+      <p><strong>事实与逻辑：</strong>短线布油受胡塞袭击冲上 94.66 美元，但摩根大通与高盛均预测 2027 年原油将因供应释放跌向 60–80 美元。若 11 月 29 日 OPEC+ 会议未进一步收紧供给，短期地缘溢价反而是押注 2027 年通胀回落与黄金中期修复（摩根大通看 4,500 美元）的逆向观察点。</p>
+      <p><strong>催化剂与失效条件：</strong>重点跟踪 11 月 29 日 OPEC+ 会议与霍尔木兹海峡航运实况；若美伊爆发直接军事打击导致航道长期中断，通缩链条将彻底失效。</p>
+    </div>
+
+    <div class="item-rule">
+      <h3>洞察四：中港资产与非美市场正承接逃离拥挤美股 AI 的再配置资金</h3>
+      <p><strong>事实与逻辑：</strong>印度 Nifty 50 涨 1.85%、金龙指数涨 1.87%、伯里重仓京东与港股消费/科技、瑞银看高恒指至 26,000 点，显示在全球估值重构中，低估值且具内需/回购托底的非美资产正获得边际配置优势。</p>
+      <p><strong>催化剂与失效条件：</strong>明日美团财报及下周一（11/30）中国 11 月官方 PMI；若 USTR 对华叠加 20% 关税进一步升级为全面金融限制，外资流入将受阻。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 09｜未来重要事件及风险日历 -->
+<section class="sec">
+  <h2>09｜未来重要事件及风险日历 Market Calendar（北京时间）</h2>
+  <p class="measure"><strong>未来 24 小时最值得关注的三大市场催化剂：</strong>（1）<strong>今日全天亚太与 A/H 股在美股休市期间的独立定价</strong>（检验 A 股 3,500 点争夺、宽基 ETF 护盘及港股科技修复成色）；（2）<strong>明日（11/27）07:30 日本 11 月东京核心 CPI</strong>（预期回落至 2.6% 或冲高至 3.0%，直接决定日本央行 12 月加息节奏与日元套息平仓风险）；（3）<strong>中东炼油厂遇袭余波与 11 月 29 日 OPEC+ 会议前原油风险溢价演变</strong>。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>北京时间</th>
+          <th>国家/地区</th>
+          <th>重要事件 / 数据</th>
+          <th>市场预期（前值）</th>
+          <th>重要度</th>
+          <th>潜在影响资产</th>
+          <th>来源</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="mono">11/26 全天</td><td>美国</td><td><strong>感恩节休市（NYSE/Nasdaq 及美债全天休市）</strong></td><td>欧美流动性清淡，亚盘主导定价</td><td>★★★</td><td>全球跨资产波动放大</td><td><a href="https://www.nyse.com/markets/hours-calendars" target="_blank" rel="noopener noreferrer">NYSE</a></td></tr>
+        <tr><td class="mono">11/27 07:30</td><td>日本</td><td><strong>11 月东京核心 CPI 同比初值</strong></td><td>关注是否维持高位（影响12月加息）</td><td>★★★</td><td>日元、日债、日经 225</td><td><a href="https://tradingeconomics.com/japan/calendar" target="_blank" rel="noopener noreferrer">Trading Economics</a></td></tr>
+        <tr><td class="mono">11/27 盘后</td><td>中国香港</td><td><strong>美团-W（03690.HK）2026 年 Q3 财报</strong></td><td>聚焦外卖减亏与盈利拐点</td><td>★★☆</td><td>恒生科技、中概互联网</td><td><a href="https://www.meituan.com/zh-HK/investor/calendar" target="_blank" rel="noopener noreferrer">美团 IR</a></td></tr>
+        <tr><td class="mono">11/27 22:30起</td><td>美国</td><td>黑色星期五半日市（美股 11/28 02:00 收盘）</td><td>关注黑五假日零售销售初值</td><td>★★☆</td><td>美股零售、低流动性行情</td><td><a href="https://www.sifma.org/resources/guides-playbooks/holiday-schedule" target="_blank" rel="noopener noreferrer">SIFMA</a></td></tr>
+        <tr><td class="mono">11/29 待定</td><td>全球</td><td><strong>OPEC+ 部长级会议</strong></td><td>中东遇袭后评估 2027 年产量政策</td><td>★★★</td><td>布伦特/WTI 原油、能源股</td><td><a href="https://www.cls.cn/detail/2544794" target="_blank" rel="noopener noreferrer">财联社</a></td></tr>
+        <tr><td class="mono">11/30 09:30</td><td>中国</td><td><strong>11 月官方制造业与非制造业 PMI</strong></td><td>关注能否维持扩张区间</td><td>★★★</td><td>A 股、港股、人民币、商品</td><td><a href="https://www.stats.gov.cn/english/PressRelease/" target="_blank" rel="noopener noreferrer">国家统计局</a></td></tr>
+        <tr><td class="mono">11/30 全天</td><td>全球/美国</td><td>刚果（金）暂停钴出口生效；2Y/5Y/7Y 美债集中交割</td><td>钴供给硬收缩；月末美元流动性收紧</td><td>★★☆</td><td>钴期货、电池金属、美元流动性</td><td><a href="https://companies.caixin.com/2026-11-25/102508448.html" target="_blank" rel="noopener noreferrer">财新网</a></td></tr>
+        <tr><td class="mono">12/01 全天</td><td>欧盟/美国</td><td>欧盟混动车临时保障措施生效；<strong>黄仁勋赴美众议院听证</strong></td><td>关注关税反制与英伟达监管表态</td><td>★★★</td><td>出海车企、英伟达、费城半导体</td><td><a href="https://aroundprague.cz/en/news/us/jensen-huang-heads-to-capitol-hill-after-trump-backed-return-to-nvidia" target="_blank" rel="noopener noreferrer">AroundPrague</a></td></tr>
+        <tr><td class="mono">12/01 23:00</td><td>美国</td><td><strong>11 月 ISM 制造业 PMI</strong></td><td>前值 55.5</td><td>★★★</td><td>美元、美债、全球周期股</td><td><a href="https://www.ismworld.org/supply-management-news-and-reports/reports/rob-report-calendar/" target="_blank" rel="noopener noreferrer">ISM</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 连续追踪与增量研究机制 -->
+<section class="sec">
+  <h2>连续追踪与增量对比（较 11-25 及 11-24 历史简报）</h2>
+  <p class="meta-note">历史访问说明：已接入 1 日前（2026-11-25 10:55）及 2 日前（2026-11-24 14:14）历史简报完成连续追踪；7 日及 30 日历史简报暂无存档，不予虚构。</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>核心追踪主题</th>
+          <th>最新状态</th>
+          <th>前序基线（11-24 → 11-25）</th>
+          <th>今日最新演变与验证（11-26）</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>美国再通胀与 12 月美联储加息</strong></td>
+          <td class="down">持续强化（但美债现背离）</td>
+          <td>11/24 加息定价 95% → 11/25 消费者信心飙至 103.3 推升定价至 97%。</td>
+          <td><strong>兑现偏鹰：</strong>10 月核心 PCE 3.3% 超预期、Q3 GDP 上修至 4.3%，加息概率达 97.8%；但美债收益率逆势跌 7–10bp，债市转向交易增长与避险。</td>
+        </tr>
+        <tr>
+          <td><strong>美国 301 工业补贴关税</strong></td>
+          <td class="down">正式落地（由传闻转方案）</td>
+          <td>11/25 为媒体援引消息人士称拟针对 16 国公布。</td>
+          <td><strong>正式公布：</strong>USTR 锁定 14 个经济体提出 15%–35% 广泛关税方案（中国叠加 20%、越南最高 35%），进入实质政策博弈期。</td>
+        </tr>
+        <tr>
+          <td><strong>AI 信用风险与债务链条</strong></td>
+          <td class="down">加速扩散（官方化）</td>
+          <td>11/25 Oracle CDS 走阔与马斯克预警 2027 现金危机初现端倪。</td>
+          <td><strong>全面升级：</strong>标普将英伟达 AA 评级列入负面观察，CoreWeave CDS 飙至 1,314bp、软银达 501bp，美联储《金融稳定报告》点名 6,800 亿 AI 债风险。</td>
+        </tr>
+        <tr>
+          <td><strong>全球科技股与大空头立场</strong></td>
+          <td class="up">边际减弱（现深 V 止血）</td>
+          <td>11/24 芯片暴涨 → 11/25 SOX 重挫 7.88% 陷入二次恐慌。</td>
+          <td><strong>情绪反转信号：</strong>美股盘中触及熊市线后深 V 收复绝大部分失地，大空头伯里清仓纳指 100 Put 临时转多，今早日韩与港股科技普涨修复。</td>
+        </tr>
+        <tr>
+          <td><strong>中港股市与护盘力量</strong></td>
+          <td class="up">政策托底强化</td>
+          <td>11/25 早盘港强 A 弱，但 25 日尾盘双双收跌（沪指破 3,500、恒指破 22,000）。</td>
+          <td>A 股宽基 ETF 尾盘放量逾 230 亿护盘 + 南向资金净买 64.34 亿港元，配合隔夜金龙指数 +1.87%，今早 A/H 股同步反弹。</td>
+        </tr>
+        <tr>
+          <td><strong>中东局势与原油/黄金</strong></td>
+          <td class="down">油价风险再起 / 金价探底修复</td>
+          <td>11/25 布油 91 美元震荡，黄金连跌至 3,553 美元。</td>
+          <td>胡塞袭击沙特炼油厂推升布油大涨 3.57% 至 94.66 美元；黄金盘中击穿 3,500 至 3,426 美元后深 V 回到 3,564 美元附近。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 唯一 Full-Bleed Band：结尾总结 -->
+<div class="full-band">
+  <h2>今日结论与行动观察</h2>
+  <div class="kw-list">
+    <span>#核心PCE创三年新高</span>
+    <span>#14国301关税落地</span>
+    <span>#AI信用警报官方化</span>
+    <span>#美股史诗深V反转</span>
+    <span>#伯里平空转多</span>
+  </div>
+
+  <p><strong>今日核心判断：</strong>全球市场在感恩节前夜完成了一次教科书式的压力测试——3.3% 核心 PCE、14 国 301 关税与标普对英伟达的负面信用观察同日压顶，却反而逼出了美股的深 V 反转、美债收益率 -7bp 的避险大涨以及大空头伯里的平空转多。这说明市场对 12 月加息的恐慌定价已近极致，但真正的长期隐忧正从“股市估值”向“AI 信用利差（CoreWeave 1,314bp / Oracle 360bp）”与“中东油价冲击（布油 94.66 美元）”转移。短期策略宜远离高杠杆算力债主，聚焦自由现金流稳健的防御蓝筹与政策/南向托底的中港超跌龙头。</p>
+
+  <h3>今日重点跟踪</h3>
+  <ul class="clean-list">
+    <li><strong>今日 A 股 3,500 点争夺与恒生科技修复持续性：</strong>观察美股感恩节休市期间，昨日尾盘放量 230 亿的宽基 ETF 与南向资金能否巩固阶段底部。</li>
+    <li><strong>明日 07:30 日本 11 月东京核心 CPI：</strong>验证日本通胀粘性及日元（159.05）会否触发新一轮套息平仓。</li>
+    <li><strong>胡塞袭击沙特炼油厂的后续证实与 11 月 29 日 OPEC+ 会议前瞻：</strong>布伦特原油能否守在 95 美元下方直接关系 2027 年通胀回落逻辑。</li>
+    <li><strong>AI 信用利差（Oracle / CoreWeave / 软银 CDS）与明日美团 Q3 财报：</strong>前者决定美股科技股中期底部，后者检验港股互联网盈利拐点。</li>
+  </ul>
+
+  <p style="margin-top:20px; font-size:17px; color:var(--ink);"><strong>一句话市场总结：</strong>核心 PCE 创三年新高、14 国 301 关税与标普负面观察英伟达三重利空同日落地，却在感恩节前夜砸出美股史诗级深 V、美债避险大涨与伯里平空转多，宣告市场正式迈入“高利率信用排雷与跨区域超跌修复”的新阶段。</p>
+</div>
+
+<!-- Sources -->
+<section class="sec">
+  <h2>Sources</h2>
+  <ol class="sources">
+    <li><a href="https://www.bea.gov/news/2026/personal-income-and-outlays-october-2026" target="_blank" rel="noopener noreferrer">BEA — Personal Income and Outlays, October 2026</a></li>
+    <li><a href="https://www.federalreserve.gov/monetarypolicy/beigebook202611-summary.htm" target="_blank" rel="noopener noreferrer">Federal Reserve — Beige Book Summary (November 2026)</a></li>
+    <li><a href="https://ustr.gov/sites/default/files/files/Press/Releases/2026/SECP%20301%20China%20report.pdf" target="_blank" rel="noopener noreferrer">USTR — Section 301 Overcapacity Investigation Report (Nov 2026)</a></li>
+    <li><a href="https://www.stocktitan.net/articles/new-tariffs-14-economies-section-301-2026" target="_blank" rel="noopener noreferrer">Stock Titan — USTR Proposes 15%–35% Tariffs on 14 Economies</a></li>
+    <li><a href="https://www.schwab.com/learn/story/stock-market-update-open" target="_blank" rel="noopener noreferrer">Charles Schwab — Stock Market Update &amp; FedWatch (Nov 25, 2026)</a></li>
+    <li><a href="https://cappnotes.substack.com/p/closing-look-wednesday-november-25" target="_blank" rel="noopener noreferrer">CappNotes — Closing Look: Wednesday, November 25, 2026</a></li>
+    <li><a href="https://www.koreaherald.com/article/10949940" target="_blank" rel="noopener noreferrer">The Korea Herald — Bank of Korea Hikes Rate to 3.25% (Nov 26, 2026)</a></li>
+    <li><a href="https://www.cls.cn/detail/2544794" target="_blank" rel="noopener noreferrer">财联社 — 11月26日早报：美股深V、宽基ETF护盘与中东原油异动</a></li>
+    <li><a href="https://www.cls.cn/detail/2544539" target="_blank" rel="noopener noreferrer">财联社 — 港股25日收盘与南向资金净买入 64.34 亿港元</a></li>
+    <li><a href="https://www.pimco.com/us/en/insights/the-credit-market-lens-making-sense-of-diverging-signals-in-investment-grade-and-high-yield-credit" target="_blank" rel="noopener noreferrer">PIMCO — The Credit Market Lens (Nov 23, 2026)</a></li>
+    <li><a href="https://www.blackrock.com/sg/en/insights/global-weekly-commentary" target="_blank" rel="noopener noreferrer">BlackRock Investment Institute — Global Weekly Commentary</a></li>
+    <li><a href="https://www.morningstar.com/news/marketwatch/2026112586/the-sp-500-is-headed-to-8200-and-downturns-like-this-one-are-actually-part-of-the-reason-says-jpmorgan" target="_blank" rel="noopener noreferrer">MarketWatch — JPMorgan Sets 2027 S&amp;P 500 Target at 8,200</a></li>
+    <li><a href="https://investinglive.com/stock-market-update/bofa-sees-s-p-500-at-7-800-by-end-2027-a-target-that-only-takes-it-back-to-october/" target="_blank" rel="noopener noreferrer">InvestingLive — BofA Sees S&amp;P 500 at 7,800 by End-2027</a></li>
+    <li><a href="https://www.rigzone.com/news/jp_morgan_outlines_oil_outlook_for_2027_2028-25-nov-2026-185163-article/" target="_blank" rel="noopener noreferrer">Rigzone — J.P. Morgan Outlines 2027–2028 Oil Supply Flood</a></li>
+    <li><a href="https://www.yicaiglobal.com/news/ubs-sees-better-risk-reward-profile-for-chinas-stocks-in-2027-targeting-msci-china-index-at-76" target="_blank" rel="noopener noreferrer">Yicai Global — UBS Targets MSCI China at 76 and HSI at 26,000</a></li>
+    <li><a href="https://mlq.ai/news/michael-burry-sells-his-last-nasdaq-100-puts-and-says-his-portfolio-is-now-mostly-long/" target="_blank" rel="noopener noreferrer">MLQ.ai — Michael Burry Sells Last Nasdaq-100 Puts, Turns Mostly Long</a></li>
+    <li><a href="https://www.investing.com/news/company-news/cathie-woods-ark-adds-to-anthropics-stock-trims-netflix-93CH-5051847" target="_blank" rel="noopener noreferrer">Investing.com — Cathie Wood's ARK Adds to Anthropic &amp; SpaceX</a></li>
+    <li><a href="https://www.benzinga.com/markets/tech/26/11/63657437/cds-dont-lie-chamath-warns-as-credit-markets-sound-the-alarm" target="_blank" rel="noopener noreferrer">Benzinga — 'CDS Don't Lie': Credit Markets Sound Alarm on AI Debt</a></li>
+    <li><a href="https://cryptobriefing.com/fed-warns-of-680b-ai-infrastructure-debt-risk-to-financial-stability/" target="_blank" rel="noopener noreferrer">CryptoBriefing — Fed Warns of $680B AI Infrastructure Debt Risk</a></li>
+    <li><a href="https://www.kitco.com/news/article/2026-11-25/gold-silver-reverse-early-losses-wall-street-rebounds-ahead-thanksgiving" target="_blank" rel="noopener noreferrer">Kitco — Gold &amp; Silver Reverse Early Losses Ahead of Thanksgiving</a></li>
+  </ol>
+</section>
+
+</div>
+<script>
+(function () {
+  // ===== 全自动配置（适配 GitHub Pages + issues.json） =====
+  // 1) 自动从当前文件名提取日期（支持 2026-11-26.html 或 2026_11_26.html）
+  // 2) 若需为本期指定外部音频直链，填入 CUSTOM_AUDIO_URL；留空则自动匹配 ./audio/{日期}.mp3
+  const FALLBACK_DATE = "2026-11-26";
+  const CUSTOM_AUDIO_URL = "";
+  const AUDIO_DIR = "./audio/";
+  const AUDIO_EXT = ".mp3";
+  const ISSUES_INDEX_URL = "./issues.json";
+
+  function detectCurrentDate() {
+    const path = window.location.pathname || "";
+    const file = path.split("/").pop() || "";
+    const m = file.match(/^(\d{4})[-_](\d{2})[-_](\d{2})\.html$/i);
+    if (m) return m[1] + "-" + m[2] + "-" + m[3];
+    return FALLBACK_DATE;
+  }
+
+  const currentDate = detectCurrentDate();
+
+  // ---------------- 语音播报栏 ----------------
+  const audio = document.getElementById("briefing-audio");
+  const playBtn = document.getElementById("audio-play-btn");
+  const iconPlay = document.getElementById("audio-icon-play");
+  const iconPause = document.getElementById("audio-icon-pause");
+  const statusEl = document.getElementById("audio-status");
+  const seekEl = document.getElementById("audio-seek");
+  const timeEl = document.getElementById("audio-time");
+  const speedBtn = document.getElementById("audio-speed");
+  const muteBtn = document.getElementById("audio-mute");
+  const iconVol = document.getElementById("audio-icon-vol");
+  const iconMuted = document.getElementById("audio-icon-muted");
+
+  const speeds = [1.0, 1.25, 1.5, 2.0, 0.75];
+  let speedIdx = 0;
+  let audioReady = false;
+  let audioFailed = false;
+
+  const autoAudioUrl = AUDIO_DIR + currentDate + AUDIO_EXT;
+  const resolvedAudioUrl =
+    (audio.getAttribute("src") && audio.getAttribute("src").trim()) ||
+    (CUSTOM_AUDIO_URL && CUSTOM_AUDIO_URL.trim()) ||
+    autoAudioUrl;
+
+  audio.src = resolvedAudioUrl;
+  statusEl.textContent = "正在检测当日语音（" + resolvedAudioUrl + "）...";
+
+  function formatTime(sec) {
+    if (!Number.isFinite(sec) || sec < 0) return "--:--";
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return String(m).padStart(2, "0") + ":" + String(s).padStart(2, "0");
+  }
+
+  function updateSeekTrack(pct) {
+    const clamped = Math.max(0, Math.min(100, pct));
+    seekEl.style.background =
+      "linear-gradient(to right, var(--accent-text) 0%, var(--accent-text) " +
+      clamped + "%, var(--hair-strong) " + clamped + "%, var(--hair-strong) 100%)";
+  }
+
+  function setPlayingUI(isPlaying) {
+    iconPlay.style.display = isPlaying ? "none" : "block";
+    iconPause.style.display = isPlaying ? "block" : "none";
+    playBtn.setAttribute("aria-label", isPlaying ? "暂停语音播报" : "播放语音播报");
+  }
+
+  audio.addEventListener("loadedmetadata", function () {
+    audioReady = true;
+    audioFailed = false;
+    seekEl.disabled = false;
+    timeEl.textContent = "00:00 / " + formatTime(audio.duration);
+    statusEl.textContent = "就绪 · 全长 " + formatTime(audio.duration);
+    statusEl.classList.remove("warn");
+  });
+
+  audio.addEventListener("error", function () {
+    audioReady = false;
+    audioFailed = true;
+    seekEl.disabled = true;
+    statusEl.textContent = "当日音频待上传（请将音频传至 " + resolvedAudioUrl + "）";
+    statusEl.classList.remove("warn");
+  });
+
+  playBtn.addEventListener("click", function () {
+    if (audioFailed) {
+      statusEl.textContent = "未找到音频文件：请上传至 " + resolvedAudioUrl + " 后刷新";
+      statusEl.classList.add("warn");
+      return;
+    }
+    statusEl.classList.remove("warn");
+    if (audio.paused) {
+      audio.play().catch(function () {
+        statusEl.textContent = "音频加载失败，请确认 " + resolvedAudioUrl + " 已上传且可访问";
+        statusEl.classList.add("warn");
+      });
+    } else {
+      audio.pause();
+    }
+  });
+
+  audio.addEventListener("play", function () {
+    setPlayingUI(true);
+    statusEl.textContent = "正在播报 · " + currentDate + " 全球宏观与资本市场简报";
+  });
+
+  audio.addEventListener("pause", function () {
+    setPlayingUI(false);
+    if (!audio.ended && audioReady) {
+      statusEl.textContent = "已暂停 · 点击继续播报";
+    }
+  });
+
+  audio.addEventListener("ended", function () {
+    setPlayingUI(false);
+    statusEl.textContent = "播报已结束 · 点击重新收听";
+  });
+
+  audio.addEventListener("timeupdate", function () {
+    if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
+    const pct = (audio.currentTime / audio.duration) * 100;
+    seekEl.value = pct;
+    updateSeekTrack(pct);
+    timeEl.textContent = formatTime(audio.currentTime) + " / " + formatTime(audio.duration);
+  });
+
+  seekEl.addEventListener("input", function () {
+    if (!Number.isFinite(audio.duration) || audio.duration <= 0) return;
+    const pct = parseFloat(seekEl.value);
+    audio.currentTime = (pct / 100) * audio.duration;
+    updateSeekTrack(pct);
+  });
+
+  speedBtn.addEventListener("click", function () {
+    speedIdx = (speedIdx + 1) % speeds.length;
+    const rate = speeds[speedIdx];
+    audio.playbackRate = rate;
+    speedBtn.textContent = rate.toFixed(rate % 1 === 0 ? 1 : 2).replace(/\.00$/, ".0") + "x";
+  });
+
+  muteBtn.addEventListener("click", function () {
+    audio.muted = !audio.muted;
+    iconVol.style.display = audio.muted ? "none" : "block";
+    iconMuted.style.display = audio.muted ? "block" : "none";
+  });
+
+  // ---------------- 日期切换栏（自动读取 issues.json） ----------------
+  const prevBtn = document.getElementById("date-prev-btn");
+  const nextBtn = document.getElementById("date-next-btn");
+  const selectEl = document.getElementById("date-select");
+  const hintEl = document.getElementById("date-nav-hint");
+
+  function normalizeIssues(data) {
+    let list = [];
+    if (Array.isArray(data)) {
+      list = data.map(function (item) {
+        if (typeof item === "string") return { date: item, file: item + ".html" };
+        return item;
+      });
+    } else if (data && Array.isArray(data.issues)) {
+      list = data.issues.map(function (item) {
+        if (typeof item === "string") return { date: item, file: item + ".html" };
+        return item;
+      });
+    }
+    // 过滤非法项并确保当前期始终在列表中
+    list = list.filter(function (x) { return x && x.date && x.file; });
+    if (!list.some(function (x) { return x.date === currentDate; })) {
+      list.push({ date: currentDate, file: currentDate + ".html" });
+    }
+    list.sort(function (a, b) { return a.date.localeCompare(b.date); });
+    return list;
+  }
+
+  function renderDateNav(issues) {
+    selectEl.innerHTML = "";
+    const currentIdx = issues.findIndex(function (x) { return x.date === currentDate; });
+
+    issues.slice().reverse().forEach(function (item) {
+      const opt = document.createElement("option");
+      opt.value = item.file;
+      opt.textContent = item.date + (item.date === currentDate ? " (当前)" : "");
+      if (item.date === currentDate) opt.selected = true;
+      selectEl.appendChild(opt);
+    });
+
+    const prevItem = currentIdx > 0 ? issues[currentIdx - 1] : null;
+    const nextItem = currentIdx >= 0 && currentIdx < issues.length - 1 ? issues[currentIdx + 1] : null;
+
+    prevBtn.disabled = !prevItem;
+    prevBtn.title = prevItem ? "跳转至 " + prevItem.date : "已是最早一期";
+    prevBtn.onclick = function () {
+      if (prevItem) window.location.href = "./" + prevItem.file;
+    };
+
+    nextBtn.disabled = !nextItem;
+    nextBtn.title = nextItem ? "跳转至 " + nextItem.date : "已是最新一期";
+    nextBtn.onclick = function () {
+      if (nextItem) window.location.href = "./" + nextItem.file;
+    };
+
+    selectEl.onchange = function () {
+      if (selectEl.value) window.location.href = "./" + selectEl.value;
+    };
+
+    if (hintEl && currentIdx >= 0) {
+      hintEl.textContent = "第 " + (currentIdx + 1) + " / " + issues.length + " 期";
+    }
+  }
+
+  fetch(ISSUES_INDEX_URL + "?t=" + Date.now(), { cache: "no-store" })
+    .then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    })
+    .then(function (data) {
+      renderDateNav(normalizeIssues(data));
+    })
+    .catch(function () {
+      // 本地 file:// 预览或首次未生成 issues.json 时优雅降级
+      renderDateNav([{ date: currentDate, file: currentDate + ".html" }]);
+    });
+})();
+</script>
+</body>
+</html>
